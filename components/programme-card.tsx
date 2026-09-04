@@ -1,0 +1,7 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import type { Programme } from "@/lib/content";
+
+export function ProgrammeCard({ programme }: { programme: Programme }) {
+  return <article className="group border border-border bg-surface p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-[8px_8px_0_var(--surface-muted)]"><div className="flex items-center justify-between gap-4"><span className="rounded-full bg-surface-muted px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-accent">{programme.status}</span><span className="text-sm text-primary-strong">{programme.date}</span></div><h3 className="mt-8 max-w-md text-2xl font-bold text-foreground">{programme.title}</h3><p className="mt-4 text-sm leading-7 text-primary-strong">{programme.summary}</p><div className="mt-8 flex items-center justify-between gap-4 border-t border-border pt-5"><span className="text-sm font-bold text-primary-strong">{programme.metric}</span><Link href="/programs" className="inline-flex items-center gap-1 text-sm font-bold text-accent transition-transform group-hover:translate-x-1">View details <ArrowUpRight size={15} aria-hidden="true" /></Link></div></article>;
+}

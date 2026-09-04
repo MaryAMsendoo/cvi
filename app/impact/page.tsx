@@ -1,0 +1,10 @@
+import Link from "next/link";
+import { PageIntro } from "@/components/page-intro";
+import { StatGrid } from "@/components/stat-grid";
+import { stats } from "@/lib/content";
+
+export const metadata = { title: "Impact & Results" };
+
+export default function ImpactPage() {
+  return <main><PageIntro eyebrow="Impact and results" title="Early evidence, clearly stated." description="We are building our measurement practice alongside our programmes, with a commitment to share what we know and label what is still to come." /><div className="mx-auto max-w-7xl px-6 py-20 lg:px-10"><StatGrid stats={stats} /><section className="mt-20 grid gap-12 lg:grid-cols-[0.8fr_1.2fr]"><div><p className="text-sm font-bold uppercase tracking-[0.25em] text-accent">Achieved to date</p><h2 className="mt-3 text-4xl font-bold">57 young people reached through the June 2026 AI Bootcamp.</h2></div><div><p className="text-lg leading-8 text-primary-strong">The Digital Skills Makurdi AI Bootcamp trained 57 Makurdi youths on AI fundamentals. It was sponsored by the Mandela Washington Fellows Alumni Association of Nigeria.</p><p className="mt-6 leading-7 text-primary-strong">The brief also references an earlier working figure of 43 youths trained; CVI should reconcile that internal reporting difference before publishing a final impact report.</p></div></section><section className="mt-20 bg-surface-muted p-8 lg:p-12"><p className="text-sm font-bold uppercase tracking-[0.25em] text-accent">Coming next</p><h2 className="mt-3 text-3xl font-bold">A place for cohort stories and case studies.</h2><p className="mt-5 max-w-2xl leading-7 text-primary-strong">No testimonials or case studies are being presented yet. This space is reserved for participant stories once the first cohort completes its follow-up.</p><Link href="/programs" className="mt-7 inline-block font-bold text-accent">See programme detail →</Link></section></div></main>;
+}

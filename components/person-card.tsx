@@ -1,0 +1,6 @@
+import Image from "next/image";
+import type { Person } from "@/lib/content";
+
+export function PersonCard({ person }: { person: Person }) {
+  return <article className="group flex h-full flex-col border border-border bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-[8px_8px_0_var(--surface-muted)]"><div className="flex items-start gap-4">{person.image ? <Image src={person.image} alt={person.name} width={160} height={160} className="h-20 w-20 rounded-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0" /> : <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-surface-muted text-2xl font-bold text-primary">{person.name.split(" ").map((part) => part[0]).join("")}</div>}<div><p className="text-xl font-bold text-foreground">{person.name}</p><p className="mt-1 text-sm font-bold text-accent">{person.role}</p></div></div><p className="mt-6 text-sm leading-7 text-primary-strong">{person.bio}</p><details className="mt-auto pt-5"><summary className="cursor-pointer text-sm font-bold text-primary-strong">Read full bio <span aria-hidden="true">↗</span></summary><p className="mt-3 text-sm leading-7 text-primary-strong">{person.fullBio}</p></details></article>;
+}
