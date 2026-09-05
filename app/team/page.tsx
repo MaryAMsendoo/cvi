@@ -1,4 +1,5 @@
 import { PersonCard } from "@/components/person-card";
+import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
 import { people, stats } from "@/lib/content";
 
 export const metadata = { title: "Our Team" };
@@ -20,51 +21,8 @@ export default function TeamPage() {
   return (
     <main>
       {/* Team Hero */}
-      <section className="relative overflow-hidden bg-foreground text-white">
-        <div className="absolute inset-0 pointer-events-none opacity-[0.12]">
-          <svg
-            className="h-full w-full"
-            viewBox="0 0 800 500"
-            preserveAspectRatio="xMidYMid slice"
-            aria-hidden="true"
-          >
-            <path
-              d="M-80 380 C 100 270, 190 430, 350 320 S 600 150, 880 250"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <path
-              d="M-80 420 C 100 310, 190 470, 350 360 S 600 190, 880 290"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <path
-              d="M-80 460 C 100 350, 190 510, 350 400 S 600 230, 880 330"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-
-            <circle
-              cx="650"
-              cy="90"
-              r="130"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <circle
-              cx="650"
-              cy="90"
-              r="95"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
+      <section className="relative overflow-hidden bg-primary-very-strong text-white">
+        <SectionBackdrop variant="m" tone="dark" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
           <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
@@ -97,9 +55,9 @@ export default function TeamPage() {
                   fontWeight: 500,
                 }}
               >
-                Small team.
+                Small team
                 <br />
-                Serious
+                with a Serious
                 <br />
                 responsibility.
               </h1>

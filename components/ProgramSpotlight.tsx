@@ -51,7 +51,7 @@ function TiltCollage() {
         className="absolute left-0 top-0 h-[340px] w-[78%] overflow-hidden rounded-[2rm] shadow-xl [clip-path:polygon(5%_0,100%_0,95%_100%,0_100%)]"
       >
         <Image
-          src="/img5.png"
+          src="/p10.jpg"
           alt="Youths at the Digital Skills Makurdi AI Bootcamp"
           fill
           className="object-cover"
@@ -67,7 +67,7 @@ function TiltCollage() {
         className="absolute bottom-0 right-0 h-52 w-52 overflow-hidden rounded-[1.75rem] border-4 border-surface shadow-2xl [clip-path:polygon(0_6%,94%_0,100%_94%,6%_100%)]"
       >
         <Image
-          src="/img18.png"
+          src="/p11.jpg"
           alt="A participant working at a laptop"
           fill
           className="object-cover"

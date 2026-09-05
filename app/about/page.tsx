@@ -47,7 +47,7 @@ export default function Page() {
     <main>
       {/* PAGE HERO */}
       <section className="relative overflow-hidden bg-foreground text-white">
-        <SectionBackdrop variant="a" tone="dark" />
+        <SectionBackdrop variant="d" tone="dark" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32 lg:py-36">
           <motion.div
@@ -117,93 +117,82 @@ export default function Page() {
 
       {/* WHO WE ARE */}
       <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
-        {/* <SectionBackdrop variant="d" tone="light" /> */}
+  {/* <SectionBackdrop variant="d" tone="light" /> */}
 
-        <div className="relative mx-auto grid max-w-7xl gap-14 px-6 sm:px-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="relative overflow-hidden rounded-[2rem]">
-              <div className="relative aspect-[4/5]">
-                <Image
-                  src="/img19.png"
-                  alt="Citizens Voices International community programme"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="absolute bottom-5 left-5 max-w-xs rounded-xl border border-white/20 bg-foreground/85 p-5 text-white backdrop-blur-md">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
-                  Our starting point
-                </p>
-                <p
-                  className="mt-2 text-lg leading-snug"
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontWeight: 500,
-                  }}
-                >
-                  Local knowledge. Practical skills. Citizen participation.
-                </p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-foreground/60">
-                Who we are
-              </span>
-            </div>
-
-            <h2
-              className="mt-5 max-w-2xl text-3xl leading-tight text-foreground sm:text-5xl"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontWeight: 500,
-              }}
-            >
-              A young organisation focused on practical change.
-            </h2>
-
-            <div className="mt-7 max-w-2xl space-y-5 text-base leading-7 text-foreground/65">
-              <p>
-                Citizens Voices International (CVI) is a nonprofit organisation
-                based in Makurdi, Benue State, Nigeria. We were established to
-                address structural barriers that prevent young Nigerians,
-                particularly those in the Middle Belt, from accessing skills,
-                opportunities, and platforms through which they can contribute
-                to sustainable development.
-              </p>
-
-              <p>
-                Our work sits at the intersection of youth empowerment,
-                inclusive governance, and human capital development. We focus
-                on practical programmes that help people build capabilities,
-                connect with opportunities, and participate more meaningfully
-                in the societies they belong to.
-              </p>
-
-              <p>
-                CVI is intentionally lean and hands-on. We are building our
-                organisation alongside our programmes, with an emphasis on
-                responsible governance, measurable learning, and honest
-                reporting of what we have and have not yet achieved.
-              </p>
-            </div>
-          </motion.div>
+  <div className="relative mx-auto grid max-w-7xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
+    {/* IMAGE */}
+    <motion.div
+      initial={{ opacity: 0, x: -24 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="relative overflow-hidden rounded-[2rem]">
+        <div className="relative aspect-[4/3]">
+          <Image
+            src="/p26.jpg"
+            alt="Citizens Voices International community programme"
+            fill
+            className="object-cover"
+          />
         </div>
-      </section>
+
+        <div className="absolute bottom-5 left-5 max-w-xs rounded-xl border border-white/20 bg-foreground/85 p-5 text-white backdrop-blur-md">
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
+            Our starting point
+          </p>
+
+          <p
+            className="mt-2 text-lg leading-snug"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontWeight: 500,
+            }}
+          >
+            Local knowledge. Practical skills. Citizen participation.
+          </p>
+        </div>
+      </div>
+    </motion.div>
+
+    {/* TEXT */}
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="flex items-center gap-3">
+        <span className="h-6 w-1.5 rounded-full bg-accent" />
+        <span className="text-sm font-medium text-foreground/60">
+          Who we are
+        </span>
+      </div>
+
+      <h2
+        className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
+        style={{
+          fontFamily: "var(--font-display)",
+          fontWeight: 500,
+        }}
+      >
+        A young organisation focused on practical change.
+      </h2>
+
+      <div className="mt-7 max-w-xl space-y-5 text-base leading-7 text-foreground/65">
+        <p>
+          CVI is a nonprofit based in Makurdi, Nigeria, helping young people
+          access skills, opportunities, and platforms to make a difference.
+        </p>
+
+        <p>
+          We focus on youth empowerment, inclusive governance, and human
+          capital development through practical, accountable programmes.
+        </p>
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* WHY CVI */}
       <section className="relative overflow-hidden bg-background py-24 sm:py-32">
@@ -388,7 +377,7 @@ export default function Page() {
 
       {/* GOVERNANCE SNAPSHOT */}
       <section className="relative overflow-hidden bg-foreground py-24 text-white sm:py-28">
-        <SectionBackdrop variant="d" tone="dark" />
+        <SectionBackdrop variant="f" tone="dark" />
 
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>

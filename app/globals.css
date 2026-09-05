@@ -7,6 +7,7 @@
   --surface-muted: #e8f4f4;
   --primary: #078b9b;
   --primary-strong: #056b78;
+    --primary-very-strong: #053137;
   --accent: #f4514f;
   --border: #c9e2e3;
 }
@@ -18,6 +19,7 @@
   --color-surface-muted: var(--surface-muted);
   --color-primary: var(--primary);
   --color-primary-strong: var(--primary-strong);
+  --color-primary-very-strong: var(--primary-very-strong);
   --color-accent: var(--accent);
   --color-border: var(--border);
   --font-sans: var(--font-geist-sans);

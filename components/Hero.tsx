@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence, useInView, animate, type Variants } from "motion/react";
 
 
-const CAROUSEL_IMAGES = ["/img6.png", "/img8.png", "/img9.png", "/img14.png"];
+const CAROUSEL_IMAGES = ["/p1.jpg", "/p30.jpg", "/p8.jpg", "/p29.jpg", "/img14.png", "/p16.jpg", "/p20.jpg", "/p3.jpg", "/p4.jpg",];
 
 const STATS = [
     { value: 57, label: "youths trained" },
