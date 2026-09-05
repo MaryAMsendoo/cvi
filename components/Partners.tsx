@@ -14,7 +14,7 @@ const TRACK = [...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS];
 export default function Partners() {
   return (
     <section className="relative overflow-hidden bg-surface py-24">
-      <SectionBackdrop variant="a" tone="light" />
+      <SectionBackdrop variant="d" tone="light" />
       <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
         <div className="flex items-center gap-3">
           <span className="h-6 w-1.5 rounded-full bg-accent" />
