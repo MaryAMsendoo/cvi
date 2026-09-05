@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
-import { StackedStoryCards } from "./ui/StackedCards";
+import { StackedStoryCards } from "@/components/ui/StackedCards";
 
 const HIGHLIGHTS = [
   { value: "57", label: "youths trained", detail: "Digital Skills Makurdi AI Bootcamp, June 2026" },
@@ -11,7 +11,8 @@ const HIGHLIGHTS = [
 ];
 
 const STORY_PLACEHOLDER = {
-  headline: "Case studies and participant testimonials from the AI Bootcamp cohort are being collected and will be published here as they're confirmed with participants.",
+  headline:
+    "Case studies and participant testimonials from the AI Bootcamp cohort are being collected and will be published here as they're confirmed with participants.",
   note: "Check back after our next reporting update, or contact us directly for early access to participant outcomes.",
 };
 
@@ -46,7 +47,7 @@ export default function Impact() {
         </div>
       </section>
 
-      {/* back to a plain grid — the stack effect didn't suit stat cards */}
+      {/* plain grid — the stack effect didn't suit stat cards */}
       <section className="relative overflow-hidden bg-background px-6 py-20 sm:px-10">
         <SectionBackdrop variant="c" tone="light" />
         <div className="relative mx-auto grid max-w-5xl gap-6 sm:grid-cols-3">
@@ -73,29 +74,20 @@ export default function Impact() {
       </section>
 
       {/* stack test — same placeholder card x3, just to preview the motion */}
-      {/* stack test — same placeholder card x3, just to preview the motion */}
-<section className="relative overflow-hidden bg-surface-muted px-6 py-20 sm:px-10">
-  <SectionBackdrop variant="e" tone="light" />
-  <div className="relative mx-auto max-w-3xl">
-    <h3
-      className="text-center text-2xl text-foreground"
-      style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
-    >
-      Participant stories
-    </h3>
-    <div className="mt-20 md:mt-10">
-      <StackedStoryCards cards={STORY_CARDS} />
-    </div>
-  </div>
-</section>
+      <section className="relative overflow-hidden bg-surface-muted px-6 py-20 sm:px-10">
+        <SectionBackdrop variant="e" tone="light" />
+        <div className="relative mx-auto max-w-3xl">
+          <h3
+            className="text-center text-2xl text-foreground"
+            style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
+          >
+            Participant stories
+          </h3>
+          <div className="mt-20 md:mt-10">
+            <StackedStoryCards cards={STORY_CARDS} />
+          </div>
+        </div>
+      </section>
     </>
-  );
-}
-
-function StoryStack({ cards }: { cards: typeof STORY_CARDS }) {
-  return (
-    <div className="mx-auto max-w-xl">
-      <StackedStoryCards cards={cards} />
-    </div>
   );
 }

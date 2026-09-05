@@ -1,8 +1,9 @@
-import { PageIntro } from "@/components/page-intro";
-import { organization } from "@/lib/content";
+// governance page
 
-export const metadata = { title: "Governance & Transparency" };
-
-export default function GovernancePage() {
-  return <main><PageIntro eyebrow="Governance and transparency" title="Trust is built with visible systems." description="CVI is a newly incorporated trustee. We are putting the policies, reporting habits, and financial discipline in place to support responsible growth." /><div className="mx-auto max-w-7xl px-6 py-20 lg:px-10"><div className="grid gap-6 md:grid-cols-2"><section className="border border-border bg-surface p-8"><p className="text-sm font-bold uppercase tracking-[0.2em] text-accent">Registration</p><dl className="mt-6 space-y-5"><div><dt className="text-sm text-primary-strong">Legal status</dt><dd className="mt-1 font-bold">Incorporated Trustee</dd></div><div><dt className="text-sm text-primary-strong">CAC registration</dt><dd className="mt-1 font-bold">{organization.registration}</dd></div><div><dt className="text-sm text-primary-strong">Tax identification number</dt><dd className="mt-1 font-bold">{organization.tin}</dd></div></dl></section><section className="border border-border bg-surface p-8"><p className="text-sm font-bold uppercase tracking-[0.2em] text-accent">Board oversight</p><p className="mt-6 leading-7 text-primary-strong">Two registered trustees, Michael Benjamin (Chairman) and Festus Moses (Secretary), hold joint oversight of strategy, financial accountability, and programme integrity.</p></section></div><section className="mt-16"><p className="text-sm font-bold uppercase tracking-[0.2em] text-accent">Policies and financial overview</p><div className="mt-6 grid gap-6 md:grid-cols-3"><div className="bg-surface-muted p-6"><h2 className="font-bold">Safeguarding policy</h2><p className="mt-3 text-sm leading-6 text-primary-strong">Policy document to be drafted and published.</p></div><div className="bg-surface-muted p-6"><h2 className="font-bold">Anti-corruption and fraud</h2><p className="mt-3 text-sm leading-6 text-primary-strong">Policy document to be drafted and published.</p></div><div className="bg-surface-muted p-6"><h2 className="font-bold">M&E framework</h2><p className="mt-3 text-sm leading-6 text-primary-strong">Framework to be drafted and published.</p></div></div><div className="mt-10 border-l-4 border-accent pl-6"><h2 className="font-bold">Financial overview</h2><p className="mt-3 max-w-3xl leading-7 text-primary-strong">As an organization incorporated in June 2026, CVI does not yet have audited financial statements. We will publish a concise funding and allocation overview, followed by audited statements as they become available.</p></div></section></div></main>;
+export default function page() {
+  return (
+    <div>
+      
+    </div>
+  )
 }

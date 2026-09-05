@@ -11,6 +11,7 @@ import {
   Users,
 } from "lucide-react";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
+import { StackedGallery } from "@/components/ui/StackedGallery";
 
 const LEARNING_AREAS = [
   {
@@ -316,6 +317,36 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* MOMENTS FROM THE BOOTCAMP */}
+<section className="relative overflow-hidden bg-background py-24 sm:py-28">
+  <SectionBackdrop variant="a" tone="light" />
+  <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
+    <div className="flex items-center gap-3">
+      <span className="h-6 w-1.5 rounded-full bg-accent" />
+      <span className="text-sm font-medium text-foreground/60">Moments from the bootcamp</span>
+    </div>
+    <h2
+      className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
+      style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
+    >
+      A look inside the cohort
+    </h2>
+
+    <div className="mt-14">
+      <StackedGallery
+        images={[
+          { id: "g1", src: "/img5.png", alt: "Participants at the AI bootcamp" },
+          { id: "g2", src: "/img6.png", alt: "Group training session" },
+          { id: "g3", src: "/img8.png", alt: "Instructor leading a session" },
+          { id: "g4", src: "/img9.png", alt: "Cohort group photo" },
+          { id: "g5", src: "/img14.png", alt: "Participant at a laptop" },
+          { id: "g6", src: "/img18.png", alt: "Hands-on practical session" },
+        ]}
+      />
+    </div>
+  </div>
+</section>
 
       {/* PARTNER / SPONSOR */}
       <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
