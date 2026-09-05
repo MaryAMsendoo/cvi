@@ -1,10 +1,13 @@
 import Link from "next/link";
+
 import {
   ArrowRight,
   Mail,
   MapPin,
   MessageSquare,
+  Phone,
 } from "lucide-react";
+
 import { FaFacebookF } from "react-icons/fa";
 
 export const metadata = {
@@ -31,21 +34,18 @@ export default function ContactPage() {
               stroke="currentColor"
               strokeWidth="1"
             />
-
             <path
               d="M-40 390 C 100 300, 180 450, 320 360 S 560 160, 840 260"
               fill="none"
               stroke="currentColor"
               strokeWidth="1"
             />
-
             <path
               d="M-40 430 C 100 340, 180 490, 320 400 S 560 200, 840 300"
               fill="none"
               stroke="currentColor"
               strokeWidth="1"
             />
-
             <circle
               cx="680"
               cy="90"
@@ -54,7 +54,6 @@ export default function ContactPage() {
               stroke="currentColor"
               strokeWidth="1"
             />
-
             <circle
               cx="680"
               cy="90"
@@ -71,7 +70,6 @@ export default function ContactPage() {
             <div>
               <div className="flex items-center gap-3">
                 <span className="h-7 w-1.5 rounded-full bg-accent" />
-
                 <span className="text-sm font-medium text-white/60">
                   Contact CVI
                 </span>
@@ -125,9 +123,7 @@ export default function ContactPage() {
                 <span className="text-xs font-bold tracking-[0.18em] text-accent">
                   01
                 </span>
-
                 <span className="h-px w-10 bg-border" />
-
                 <span className="text-xs font-bold uppercase tracking-[0.18em] text-foreground/45">
                   Find us
                 </span>
@@ -188,10 +184,73 @@ export default function ContactPage() {
                   Get in touch
                 </p>
 
-                <p className="mt-4 text-sm leading-7 text-foreground/55">
-                  Our public contact email will be published here once
-                  confirmed.
+                <a
+                  href="mailto:cvi@gmail.com"
+                  className="mt-4 block break-all text-sm leading-7 text-foreground/60 transition-colors hover:text-accent"
+                >
+                  cvi@gmail.com
+                </a>
+
+                <p className="mt-2 text-xs text-foreground/40">
+                  Click to compose an email.
                 </p>
+              </div>
+
+              {/* Phone */}
+              <div className="bg-surface p-8 sm:p-10">
+                <Phone className="h-6 w-6 text-accent" />
+
+                <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
+                  Phone
+                </p>
+
+                <p
+                  className="mt-3 text-2xl leading-tight text-foreground"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontWeight: 500,
+                  }}
+                >
+                  Call CVI
+                </p>
+
+                <a
+                  href="tel:07011308129"
+                  className="mt-4 block text-sm leading-7 text-foreground/60 transition-colors hover:text-accent"
+                >
+                  07011308129
+                </a>
+
+                <p className="mt-2 text-xs text-foreground/40">
+                  Tap to call on mobile.
+                </p>
+              </div>
+
+              {/* Direct contact */}
+              <div className="bg-surface p-8 sm:p-10">
+                <MessageSquare className="h-6 w-6 text-accent" />
+
+                <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
+                  Enquiries
+                </p>
+
+                <p
+                  className="mt-3 text-2xl leading-tight text-foreground"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontWeight: 500,
+                  }}
+                >
+                  Have a question?
+                </p>
+
+                <Link
+                  href="/get-involved"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-foreground transition-colors hover:text-accent"
+                >
+                  Send an enquiry
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
               </div>
             </div>
           </div>
@@ -219,6 +278,7 @@ export default function ContactPage() {
             </div>
 
             <div className="border-t border-border">
+              {/* Partnership */}
               <Link
                 href="/get-involved"
                 className="group grid gap-5 border-b border-border py-8 sm:grid-cols-[1fr_auto] sm:items-center"
@@ -249,6 +309,7 @@ export default function ContactPage() {
                 </div>
               </Link>
 
+              {/* Volunteering */}
               <Link
                 href="/get-involved"
                 className="group grid gap-5 border-b border-border py-8 sm:grid-cols-[1fr_auto] sm:items-center"
@@ -279,6 +340,7 @@ export default function ContactPage() {
                 </div>
               </Link>
 
+              {/* General enquiry */}
               <Link
                 href="/get-involved"
                 className="group grid gap-5 py-8 sm:grid-cols-[1fr_auto] sm:items-center"
@@ -344,6 +406,7 @@ export default function ContactPage() {
               href="https://www.facebook.com/100069913210617/posts/1304950281845400/?app=fbl"
               target="_blank"
               rel="noreferrer"
+              aria-label="Follow CVI on Facebook"
               className="group inline-flex items-center gap-3 text-sm font-semibold text-foreground"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors group-hover:border-accent group-hover:bg-accent group-hover:text-white">
@@ -375,7 +438,6 @@ export default function ContactPage() {
               stroke="currentColor"
               strokeWidth="1"
             />
-
             <circle
               cx="690"
               cy="250"
@@ -384,7 +446,6 @@ export default function ContactPage() {
               stroke="currentColor"
               strokeWidth="1"
             />
-
             <circle
               cx="690"
               cy="250"
