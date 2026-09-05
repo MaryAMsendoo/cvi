@@ -330,27 +330,6 @@ export default function GetInvolvedPage() {
                 </span>
               </div>
 
-              <h2
-                className="mt-8 max-w-sm text-4xl leading-tight tracking-[-0.025em] text-foreground sm:text-5xl"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 500,
-                }}
-              >
-                Tell us what you have in mind.
-              </h2>
-
-              <p className="mt-6 max-w-sm text-sm leading-7 text-foreground/50">
-                Give us enough context to understand your enquiry. A member of
-                the CVI team can follow up from there.
-              </p>
-
-              <div className="mt-10 border-l-2 border-accent pl-5">
-                <p className="text-sm leading-7 text-foreground/55">
-                  We welcome enquiries about partnerships, volunteering,
-                  institutional collaboration and our programmes.
-                </p>
-              </div>
             </div>
 
             <form
@@ -468,23 +447,9 @@ export default function GetInvolvedPage() {
               strokeWidth="1"
             />
 
-            <circle
-              cx="650"
-              cy="100"
-              r="80"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
+           
 
-            <circle
-              cx="650"
-              cy="100"
-              r="45"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
+            
           </svg>
         </div>
 
