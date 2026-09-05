@@ -1,3 +1,4 @@
+//lib/content.ts
 export type Person = {
   name: string;
   role: string;
