@@ -49,7 +49,7 @@ export default function TeamPage() {
 
             <div>
               <h1
-                className="max-w-5xl text-5xl leading-[0.96] tracking-[-0.03em] sm:text-6xl lg:text-8xl"
+                className="max-w-5xl text-surface-muted text-5xl leading-[0.96] tracking-[-0.03em] sm:text-6xl lg:text-8xl"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 500,

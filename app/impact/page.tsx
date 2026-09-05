@@ -35,51 +35,66 @@ export default function Page() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-foreground text-white">
-        <SectionBackdrop variant="a" tone="dark" />
+      {/* HERO */}
+<section className="relative min-h-[620px] overflow-hidden bg-foreground text-white sm:min-h-[680px]">
+  {/* Background image */}
+  <div className="absolute inset-0">
+    <Image
+      src="/img22.png"
+      alt=""
+      fill
+      priority
+      className="object-cover object-center"
+    />
+  </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32 lg:py-36">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="max-w-4xl"
-          >
-            <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-white/60">
-                Programmes
-              </span>
-            </div>
+  {/* Image treatment */}
+  <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,32,38,0.96)_0%,rgba(5,55,63,0.88)_38%,rgba(5,55,63,0.62)_68%,rgba(5,32,38,0.45)_100%)]" />
 
-            <h1
-              className="mt-6 max-w-4xl text-4xl leading-[1.04] sm:text-6xl lg:text-7xl"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontWeight: 500,
-              }}
-            >
-              Turning learning into practical opportunity.
-            </h1>
+  {/* Bottom fade */}
+  <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-foreground/80 to-transparent" />
 
-            <p className="mt-7 max-w-2xl text-base leading-7 text-white/65 sm:text-lg">
-              CVI designs practical programmes around the skills, opportunities,
-              and civic capabilities young people need to participate and
-              thrive.
-            </p>
-          </motion.div>
+  <div className="relative mx-auto flex min-h-[620px] max-w-7xl items-end px-6 py-20 sm:min-h-[680px] sm:px-10 sm:py-24">
+    <motion.div
+      initial={{ opacity: 0, y: 28 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.75 }}
+      className="max-w-4xl"
+    >
+      <div className="flex items-center gap-3">
+        <span className="h-7 w-1.5 rounded-full bg-accent" />
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="mt-16 flex items-center gap-3 text-sm text-white/45"
-          >
-            <ArrowDown size={16} aria-hidden="true" />
-            <span>Explore our completed programme</span>
-          </motion.div>
-        </div>
-      </section>
+        <span className="text-sm font-medium text-white/65">
+          Programmes
+        </span>
+      </div>
+
+      <h1
+        className="mt-6 max-w-4xl text-5xl leading-[0.98] tracking-[-0.035em] sm:text-6xl lg:text-8xl"
+        style={{
+          fontFamily: "var(--font-display)",
+          fontWeight: 500,
+        }}
+      >
+        Turning learning
+        <br />
+        into practical
+        <br />
+        opportunity.
+      </h1>
+
+      <p className="mt-7 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
+        CVI designs practical programmes around the skills, opportunities,
+        and civic capabilities young people need to participate and thrive.
+      </p>
+
+      <div className="mt-10 flex items-center gap-3 text-sm text-white/45">
+        <ArrowDown size={16} aria-hidden="true" />
+        <span>Explore our completed programme</span>
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* FEATURED PROGRAMME */}
       <section className="relative overflow-hidden bg-surface py-24 sm:py-32">

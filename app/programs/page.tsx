@@ -35,8 +35,8 @@ export default function Page() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-foreground text-white">
-        <SectionBackdrop variant="a" tone="dark" />
+      <section className="relative overflow-hidden bg-primary-very-strong text-surface-muted">
+        <SectionBackdrop variant="i" tone="dark" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32 lg:py-36">
           <motion.div
