@@ -1,4 +1,3 @@
-import { PageIntro } from "@/components/page-intro";
 import { PersonCard } from "@/components/person-card";
 import { people, stats } from "@/lib/content";
 
@@ -6,6 +5,17 @@ export const metadata = { title: "Our Team" };
 
 export default function TeamPage() {
   const groups = ["Board of Trustees", "Key Staff"] as const;
+
+  // Pull hero figures from the same stats array used below, instead of
+  // hardcoding them separately — one source of truth for these numbers.
+  // Falls back to a literal string if a label isn't found, so the page
+  // never renders "undefined" if `lib/content.ts` changes shape.
+  const findStat = (label: string) =>
+    stats.find((s) => s.label.toLowerCase().includes(label))?.value;
+
+  const trusteeCount = findStat("trustee") ?? "2";
+  const staffCount = findStat("staff") ?? "4";
+  const volunteerCount = findStat("volunteer") ?? "9";
 
   return (
     <main>
@@ -102,7 +112,7 @@ export default function TeamPage() {
                 Trustees
               </p>
               <p className="mt-2 text-sm font-medium text-white">
-                2 registered trustees
+                {trusteeCount} registered trustees
               </p>
             </div>
 
@@ -111,7 +121,7 @@ export default function TeamPage() {
                 Staff
               </p>
               <p className="mt-2 text-sm font-medium text-white">
-                4 full-time staff
+                {staffCount} full-time staff
               </p>
             </div>
 
@@ -120,7 +130,7 @@ export default function TeamPage() {
                 Volunteers
               </p>
               <p className="mt-2 text-sm font-medium text-white">
-                9 active volunteers
+                {volunteerCount} active volunteers
               </p>
             </div>
           </div>
