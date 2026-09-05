@@ -1,10 +1,432 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import { PageIntro } from "@/components/page-intro";
-import { organization } from "@/lib/content";
+import {
+  ArrowRight,
+  Mail,
+  MapPin,
+  MessageSquare,
+} from "lucide-react";
+import { FaFacebookF } from "react-icons/fa";
 
-export const metadata = { title: "Contact" };
+export const metadata = {
+  title: "Contact",
+};
 
 export default function ContactPage() {
-  return <main><PageIntro eyebrow="Contact CVI" title="Find us in Makurdi." description="For organizational profiles, partnership conversations, or programme questions, reach out to the CVI team." /><div className="mx-auto grid max-w-7xl gap-8 px-6 py-20 sm:grid-cols-2 lg:px-10"><section className="bg-surface-muted p-8"><p className="text-sm font-bold uppercase tracking-[0.2em] text-accent">Office</p><h2 className="mt-5 text-2xl font-bold">{organization.location}</h2><p className="mt-4 leading-7 text-primary-strong">{organization.address}</p></section><section className="bg-foreground p-8 text-white"><p className="text-sm font-bold uppercase tracking-[0.2em] text-accent">Online</p><p className="mt-5 text-lg">{organization.email}</p><Link href="https://www.facebook.com/100069913210617/posts/1304950281845400/?app=fbl" target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 font-bold text-surface-muted hover:text-white">Visit our Facebook page <ArrowUpRight size={17} aria-hidden="true" /></Link></section></div></main>;
+  return (
+    <main className="overflow-hidden">
+      {/* =========================================================
+          HERO
+      ========================================================= */}
+      <section className="relative overflow-hidden bg-foreground text-white">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.12]">
+          <svg
+            className="h-full w-full"
+            viewBox="0 0 800 500"
+            preserveAspectRatio="xMidYMid slice"
+            aria-hidden="true"
+          >
+            <path
+              d="M-40 350 C 100 260, 180 410, 320 320 S 560 120, 840 220"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+
+            <path
+              d="M-40 390 C 100 300, 180 450, 320 360 S 560 160, 840 260"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+
+            <path
+              d="M-40 430 C 100 340, 180 490, 320 400 S 560 200, 840 300"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+
+            <circle
+              cx="680"
+              cy="90"
+              r="115"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+
+            <circle
+              cx="680"
+              cy="90"
+              r="75"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+          </svg>
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+          <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+            <div>
+              <div className="flex items-center gap-3">
+                <span className="h-7 w-1.5 rounded-full bg-accent" />
+
+                <span className="text-sm font-medium text-white/60">
+                  Contact CVI
+                </span>
+              </div>
+
+              <div className="mt-12 max-w-sm">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
+                  Connect · Collaborate · Engage
+                </p>
+
+                <p className="mt-5 text-sm leading-7 text-white/55">
+                  Whether you are looking to partner, support our work or learn
+                  more about CVI, we&apos;d be glad to hear from you.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h1
+                className="max-w-5xl text-5xl leading-[0.96] tracking-[-0.03em] sm:text-6xl lg:text-8xl"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontWeight: 500,
+                }}
+              >
+                Let&apos;s start
+                <br />
+                a useful
+                <br />
+                conversation.
+              </h1>
+            </div>
+          </div>
+
+          <div className="mt-16 border-t border-white/15 pt-6">
+            <p className="max-w-xl text-sm leading-7 text-white/50">
+              Citizens Voices International · Makurdi, Benue State, Nigeria
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          CONTACT DETAILS
+      ========================================================= */}
+      <section className="relative bg-background">
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+          <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
+            <div>
+              <div className="flex items-center gap-4">
+                <span className="text-xs font-bold tracking-[0.18em] text-accent">
+                  01
+                </span>
+
+                <span className="h-px w-10 bg-border" />
+
+                <span className="text-xs font-bold uppercase tracking-[0.18em] text-foreground/45">
+                  Find us
+                </span>
+              </div>
+
+              <p className="mt-7 max-w-xs text-sm leading-7 text-foreground/50">
+                CVI is based in Makurdi, Benue State and works across youth
+                empowerment, inclusive governance and human capital
+                development.
+              </p>
+            </div>
+
+            <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2">
+              {/* Address */}
+              <div className="bg-surface p-8 sm:p-10">
+                <MapPin className="h-6 w-6 text-accent" />
+
+                <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
+                  Office
+                </p>
+
+                <p
+                  className="mt-3 max-w-sm text-2xl leading-tight text-foreground"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontWeight: 500,
+                  }}
+                >
+                  Makurdi, Benue State
+                </p>
+
+                <p className="mt-4 text-sm leading-7 text-foreground/55">
+                  NO 2, KONSHISHA STREET,
+                  <br />
+                  HIGH LEVEL,
+                  <br />
+                  MAKURDI, BENUE STATE,
+                  <br />
+                  NIGERIA.
+                </p>
+              </div>
+
+              {/* Email */}
+              <div className="bg-surface p-8 sm:p-10">
+                <Mail className="h-6 w-6 text-accent" />
+
+                <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
+                  Email
+                </p>
+
+                <p
+                  className="mt-3 text-2xl leading-tight text-foreground"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontWeight: 500,
+                  }}
+                >
+                  Get in touch
+                </p>
+
+                <p className="mt-4 text-sm leading-7 text-foreground/55">
+                  Our public contact email will be published here once
+                  confirmed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          ENQUIRY ROUTES
+      ========================================================= */}
+      <section className="relative bg-surface-muted">
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+          <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
+            <div>
+              <div className="flex items-center gap-4">
+                <span className="text-xs font-bold tracking-[0.18em] text-accent">
+                  02
+                </span>
+
+                <span className="h-px w-10 bg-border" />
+
+                <span className="text-xs font-bold uppercase tracking-[0.18em] text-foreground/45">
+                  How we can help
+                </span>
+              </div>
+            </div>
+
+            <div className="border-t border-border">
+              <Link
+                href="/get-involved"
+                className="group grid gap-5 border-b border-border py-8 sm:grid-cols-[1fr_auto] sm:items-center"
+              >
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
+                    Partnership
+                  </p>
+
+                  <h2
+                    className="mt-3 text-3xl text-foreground"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontWeight: 500,
+                    }}
+                  >
+                    Explore a partnership
+                  </h2>
+
+                  <p className="mt-3 max-w-xl text-sm leading-7 text-foreground/55">
+                    Discuss institutional collaboration, programme support or
+                    funding opportunities with CVI.
+                  </p>
+                </div>
+
+                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-white">
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </div>
+              </Link>
+
+              <Link
+                href="/get-involved"
+                className="group grid gap-5 border-b border-border py-8 sm:grid-cols-[1fr_auto] sm:items-center"
+              >
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
+                    Volunteering
+                  </p>
+
+                  <h2
+                    className="mt-3 text-3xl text-foreground"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontWeight: 500,
+                    }}
+                  >
+                    Join our volunteer network
+                  </h2>
+
+                  <p className="mt-3 max-w-xl text-sm leading-7 text-foreground/55">
+                    Interested in contributing your skills, time or experience
+                    to CVI&apos;s work?
+                  </p>
+                </div>
+
+                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-white">
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </div>
+              </Link>
+
+              <Link
+                href="/get-involved"
+                className="group grid gap-5 py-8 sm:grid-cols-[1fr_auto] sm:items-center"
+              >
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
+                    General enquiry
+                  </p>
+
+                  <h2
+                    className="mt-3 text-3xl text-foreground"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontWeight: 500,
+                    }}
+                  >
+                    Send us a message
+                  </h2>
+
+                  <p className="mt-3 max-w-xl text-sm leading-7 text-foreground/55">
+                    Have a question about CVI, our programmes or our
+                    organisation? Use our enquiry form.
+                  </p>
+                </div>
+
+                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-border transition-all duration-300 group-hover:border-accent group-hover:bg-accent group-hover:text-white">
+                  <MessageSquare className="h-4 w-4" />
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          SOCIAL
+      ========================================================= */}
+      <section className="relative bg-background">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-10 sm:py-28">
+          <div className="grid gap-10 border-t border-border pt-8 sm:grid-cols-[1fr_auto] sm:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
+                Stay connected
+              </p>
+
+              <h2
+                className="mt-4 text-3xl tracking-[-0.02em] text-foreground sm:text-4xl"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontWeight: 500,
+                }}
+              >
+                Follow CVI&apos;s work and updates.
+              </h2>
+
+              <p className="mt-4 max-w-xl text-sm leading-7 text-foreground/55">
+                Follow our public updates and programme activities through our
+                social channels.
+              </p>
+            </div>
+
+            <a
+              href="https://www.facebook.com/100069913210617/posts/1304950281845400/?app=fbl"
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-3 text-sm font-semibold text-foreground"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors group-hover:border-accent group-hover:bg-accent group-hover:text-white">
+                <FaFacebookF className="h-4 w-4" />
+              </span>
+
+              Facebook
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================
+          CTA
+      ========================================================= */}
+      <section className="relative overflow-hidden bg-foreground text-white">
+        <div className="pointer-events-none absolute inset-0 opacity-[0.12]">
+          <svg
+            className="h-full w-full"
+            viewBox="0 0 800 500"
+            preserveAspectRatio="xMidYMid slice"
+            aria-hidden="true"
+          >
+            <circle
+              cx="690"
+              cy="250"
+              r="170"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+
+            <circle
+              cx="690"
+              cy="250"
+              r="120"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+
+            <circle
+              cx="690"
+              cy="250"
+              r="70"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+          </svg>
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-3">
+              <span className="h-6 w-1.5 rounded-full bg-accent" />
+
+              <span className="text-sm font-medium text-white/60">
+                Citizens Voices International
+              </span>
+            </div>
+
+            <h2
+              className="mt-8 text-4xl leading-[1.03] tracking-[-0.025em] sm:text-5xl lg:text-6xl"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontWeight: 500,
+              }}
+            >
+              Good work starts with a conversation.
+            </h2>
+
+            <Link
+              href="/get-involved"
+              className="group mt-9 inline-flex items-center gap-4 rounded-md bg-accent px-6 py-4 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
+            >
+              Get involved
+
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }

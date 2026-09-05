@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { FaFacebookF } from "react-icons/fa6";
@@ -9,6 +10,7 @@ import { navItems, organization } from "@/lib/content";
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-xl">
@@ -18,8 +20,12 @@ export function SiteHeader() {
           <span className="max-w-40 text-xs font-bold uppercase tracking-[0.14em] text-primary-strong sm:max-w-none sm:text-sm">{organization.name}</span>
         </Link>
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Main navigation">
-          {navItems.map((item) => <Link key={item.href} href={item.href} className="relative text-sm font-bold text-foreground transition-colors after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all hover:text-accent hover:after:w-full">{item.label}</Link>)}
-          <Link href="/get-involved" className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white shadow-[0_8px_20px_rgba(244,81,79,0.2)] transition-transform hover:-translate-y-0.5 hover:bg-primary-strong">Partner with us <ArrowUpRight size={16} aria-hidden="true" /></Link>
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+
+            return <Link key={item.href} href={item.href} aria-current={isActive ? "page" : undefined} className={`relative text-sm font-bold text-foreground transition-colors after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:bg-accent after:transition-all hover:text-accent hover:after:w-full ${isActive ? "text-accent after:w-full" : "after:w-0"}`}>{item.label}</Link>;
+          })}
+          <Link href="/get-involved" aria-current={pathname === "/get-involved" ? "page" : undefined} className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white shadow-[0_8px_20px_rgba(244,81,79,0.2)] transition-transform hover:-translate-y-0.5 hover:bg-primary-strong">Partner with us <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </nav>
         <button
           type="button"
@@ -35,8 +41,12 @@ export function SiteHeader() {
       </div>
       <div id="mobile-navigation" className={`${menuOpen ? "block" : "hidden"} border-t border-border bg-surface px-6 py-5 lg:hidden`}>
         <nav className="mx-auto grid max-w-7xl gap-1" aria-label="Mobile navigation">
-          {navItems.map((item) => <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className="rounded-lg px-3 py-3 text-base font-bold text-foreground hover:bg-surface-muted hover:text-accent">{item.label}</Link>)}
-          <Link href="/get-involved" onClick={() => setMenuOpen(false)} className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-center text-sm font-bold text-white hover:bg-primary-strong">Partner with us <ArrowUpRight size={16} aria-hidden="true" /></Link>
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+
+            return <Link key={item.href} href={item.href} aria-current={isActive ? "page" : undefined} onClick={() => setMenuOpen(false)} className={`rounded-lg px-3 py-3 text-base font-bold text-foreground hover:bg-surface-muted hover:text-accent ${isActive ? "bg-surface-muted text-accent" : ""}`}>{item.label}</Link>;
+          })}
+          <Link href="/get-involved" aria-current={pathname === "/get-involved" ? "page" : undefined} onClick={() => setMenuOpen(false)} className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-center text-sm font-bold text-white hover:bg-primary-strong">Partner with us <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </nav>
       </div>
     </header>

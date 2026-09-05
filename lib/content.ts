@@ -99,9 +99,11 @@ export const programmes: Programme[] = [
 ];
 
 export const navItems = [
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Team", href: "/team" },
   { label: "Programs", href: "/programs" },
   { label: "Impact", href: "/impact" },
   { label: "Governance", href: "/governance" },
+  { label: "Contact", href: "/contact" },
 ];
