@@ -36,65 +36,65 @@ export default function Page() {
     <main>
       {/* HERO */}
       {/* HERO */}
-<section className="relative min-h-[620px] overflow-hidden bg-foreground text-white sm:min-h-[680px]">
-  {/* Background image */}
-  <div className="absolute inset-0">
-    <Image
-      src="/img22.png"
-      alt=""
-      fill
-      priority
-      className="object-cover object-center"
-    />
-  </div>
+      <section className="relative min-h-[620px] overflow-hidden bg-foreground text-white sm:min-h-[680px]">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/img22.png"
+            alt=""
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
 
-  {/* Image treatment */}
-  <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,32,38,0.96)_0%,rgba(5,55,63,0.88)_38%,rgba(5,55,63,0.62)_68%,rgba(5,32,38,0.45)_100%)]" />
+        {/* Image treatment */}
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,32,38,0.96)_0%,rgba(5,55,63,0.88)_38%,rgba(5,55,63,0.62)_68%,rgba(5,32,38,0.45)_100%)]" />
 
-  {/* Bottom fade */}
-  <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-foreground/80 to-transparent" />
+        {/* Bottom fade */}
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-foreground/80 to-transparent" />
 
-  <div className="relative mx-auto flex min-h-[620px] max-w-7xl items-end px-6 py-20 sm:min-h-[680px] sm:px-10 sm:py-24">
-    <motion.div
-      initial={{ opacity: 0, y: 28 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.75 }}
-      className="max-w-4xl"
-    >
-      <div className="flex items-center gap-3">
-        <span className="h-7 w-1.5 rounded-full bg-accent" />
+        <div className="relative mx-auto flex min-h-[620px] max-w-7xl items-end px-6 py-20 sm:min-h-[680px] sm:px-10 sm:py-24">
+          <motion.div
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.75 }}
+            className="max-w-4xl"
+          >
+            <div className="flex items-center gap-3">
+              <span className="h-7 w-1.5 rounded-full bg-accent" />
 
-        <span className="text-sm font-medium text-white/65">
-          Programmes
-        </span>
-      </div>
+              <span className="text-sm font-medium text-white/65">
+                Programmes
+              </span>
+            </div>
 
-      <h1
-        className="mt-6 max-w-4xl text-5xl leading-[0.98] tracking-[-0.035em] sm:text-6xl lg:text-8xl"
-        style={{
-          fontFamily: "var(--font-display)",
-          fontWeight: 500,
-        }}
-      >
-        Turning learning
-        <br />
-        into practical
-        <br />
-        opportunity.
-      </h1>
+            <h1
+              className="mt-6 max-w-4xl text-5xl leading-[0.98] tracking-[-0.035em] sm:text-6xl lg:text-8xl"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontWeight: 500,
+              }}
+            >
+              Turning learning
+              <br />
+              into practical
+              <br />
+              opportunity.
+            </h1>
 
-      <p className="mt-7 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
-        CVI designs practical programmes around the skills, opportunities,
-        and civic capabilities young people need to participate and thrive.
-      </p>
+            <p className="mt-7 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
+              CVI designs practical programmes around the skills, opportunities,
+              and civic capabilities young people need to participate and thrive.
+            </p>
 
-      <div className="mt-10 flex items-center gap-3 text-sm text-white/45">
-        <ArrowDown size={16} aria-hidden="true" />
-        <span>Explore our completed programme</span>
-      </div>
-    </motion.div>
-  </div>
-</section>
+            <div className="mt-10 flex items-center gap-3 text-sm text-white/45">
+              <ArrowDown size={16} aria-hidden="true" />
+              <span>Explore our completed programme</span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* FEATURED PROGRAMME */}
       <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
@@ -335,7 +335,6 @@ export default function Page() {
 
       {/* MOMENTS FROM THE BOOTCAMP */}
       <section className="relative overflow-hidden bg-background py-24 sm:py-28">
-        <SectionBackdrop variant="a" tone="light" />
         <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
           <div className="flex items-center gap-3">
             <span className="h-6 w-1.5 rounded-full bg-accent" />
@@ -351,12 +350,37 @@ export default function Page() {
           <div className="mt-14">
             <StackedGallery
               images={[
-                { id: "g1", src: "/img5.png", alt: "Participants at the AI bootcamp" },
-                { id: "g2", src: "/img6.png", alt: "Group training session" },
-                { id: "g3", src: "/img8.png", alt: "Instructor leading a session" },
-                { id: "g4", src: "/img9.png", alt: "Cohort group photo" },
-                { id: "g5", src: "/img14.png", alt: "Participant at a laptop" },
-                { id: "g6", src: "/img18.png", alt: "Hands-on practical session" },
+                { id: "g1", src: "/p1.jpg", alt: "Participants at the AI bootcamp" },
+                { id: "g2", src: "/p2.jpg", alt: "Group training session" },
+                { id: "g3", src: "/p3.jpg", alt: "Instructor leading a session" },
+                { id: "g4", src: "/p4.jpg", alt: "Cohort group photo" },
+                { id: "g10", src: "/p10.jpg", alt: "Youth learning session" },
+                { id: "g5", src: "/p5.jpg", alt: "Participant at a laptop" },
+                { id: "g6", src: "/p6.jpg", alt: "Hands-on practical session" },
+                { id: "g7", src: "/p7.jpg", alt: "Bootcamp participant" },
+                { id: "g8", src: "/p8.jpg", alt: "Digital skills training session" },
+                { id: "g9", src: "/p9.jpg", alt: "Participants during the bootcamp" },
+                { id: "g11", src: "/p11.jpg", alt: "Participant working at a laptop" },
+                { id: "g12", src: "/p12.jpg", alt: "Group learning session" },
+                { id: "g13", src: "/p13.jpg", alt: "Practical training activity" },
+                { id: "g14", src: "/p14.jpg", alt: "Bootcamp cohort" },
+                { id: "g15", src: "/p15.jpg", alt: "Participants at the training" },
+                { id: "g16", src: "/p16.jpg", alt: "Digital skills workshop" },
+                { id: "g18", src: "/p18.jpg", alt: "Hands-on learning activity" },
+                { id: "g19", src: "/p19.jpg", alt: "Bootcamp participants together" },
+                { id: "g20", src: "/p20.jpg", alt: "AI learning session" },
+                { id: "g21", src: "/p21.jpg", alt: "Programme participant" },
+                { id: "g22", src: "/p22.jpg", alt: "Training programme moment" },
+                { id: "g23", src: "/p23.jpg", alt: "Learning and collaboration" },
+                { id: "g24", src: "/p24.jpg", alt: "Cohort learning moment" },
+                { id: "g25", src: "/p25.jpg", alt: "Bootcamp activity" },
+                { id: "g26", src: "/p26.jpg", alt: "Participants in the programme" },
+                { id: "g27", src: "/p27.jpg", alt: "Digital training activity" },
+                { id: "g28", src: "/p28.jpg", alt: "Participants during a session" },
+                { id: "g29", src: "/p29.jpg", alt: "Cohort programme moment" },
+                { id: "g30", src: "/p30.jpg", alt: "Youth empowerment session" },
+                { id: "g31", src: "/p31.jpg", alt: "Practical digital skills session" },
+                { id: "g32", src: "/p32.jpg", alt: "Bootcamp group moment" },
               ]}
             />
           </div>

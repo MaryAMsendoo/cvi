@@ -46,68 +46,7 @@ export default function GetInvolvedPage() {
       {/* =========================================================
           HERO
       ========================================================= */}
-      <section className="relative overflow-hidden bg-foreground text-white">
-        {/* Editorial background */}
-        <div className="pointer-events-none absolute inset-0 opacity-[0.12]">
-          <svg
-            className="h-full w-full"
-            viewBox="0 0 800 520"
-            preserveAspectRatio="xMidYMid slice"
-            aria-hidden="true"
-          >
-            <path
-              d="M-40 420 C 120 320, 170 470, 330 365 S 570 130, 850 245"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <path
-              d="M-40 455 C 120 355, 170 505, 330 400 S 570 165, 850 280"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <path
-              d="M-40 490 C 120 390, 170 540, 330 435 S 570 200, 850 315"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-
-            <circle
-              cx="675"
-              cy="105"
-              r="135"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-
-            <circle
-              cx="675"
-              cy="105"
-              r="92"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-
-            <circle
-              cx="675"
-              cy="105"
-              r="48"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-
-            <path
-              d="M675 45 V165 M615 105 H735"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
+      <section className="relative overflow-hidden bg-foreground text-white">       
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32 lg:py-40">
           <div className="grid gap-14 lg:grid-cols-[0.65fr_1.35fr] lg:items-end">
@@ -183,21 +122,7 @@ export default function GetInvolvedPage() {
                 </span>
               </div>
 
-              <h2
-                className="mt-8 max-w-sm text-4xl leading-tight tracking-[-0.025em] text-foreground sm:text-5xl"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 500,
-                }}
-              >
-                There is more than one way to contribute.
-              </h2>
-
-              <p className="mt-6 max-w-sm text-sm leading-7 text-foreground/50">
-                Whether you represent an institution or simply want to lend
-                your skills, start with the route that best matches your
-                interest.
-              </p>
+        
             </div>
 
             <div className="border-t border-border">
@@ -264,24 +189,9 @@ export default function GetInvolvedPage() {
                   Direct contact
                 </span>
               </div>
-
-              <h2
-                className="mt-8 max-w-sm text-4xl leading-tight tracking-[-0.025em] text-foreground sm:text-5xl"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 500,
-                }}
-              >
-                Prefer to reach us directly?
-              </h2>
-
-              <p className="mt-6 max-w-sm text-sm leading-7 text-foreground/50">
-                You can contact the CVI team directly by phone or email, or
-                continue below to send an enquiry.
-              </p>
             </div>
 
-            <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2">
+            <div className="grid gap-px overflow-hidden rounded-xl border border-border sm:grid-cols-2">
               {/* Email */}
               <a
                 href="mailto:cvi@gmail.com"

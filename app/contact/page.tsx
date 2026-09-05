@@ -21,49 +21,6 @@ export default function ContactPage() {
           HERO
       ========================================================= */}
       <section className="relative overflow-hidden bg-foreground text-white">
-        <div className="pointer-events-none absolute inset-0 opacity-[0.12]">
-          <svg
-            className="h-full w-full"
-            viewBox="0 0 800 500"
-            preserveAspectRatio="xMidYMid slice"
-            aria-hidden="true"
-          >
-            <path
-              d="M-40 350 C 100 260, 180 410, 320 320 S 560 120, 840 220"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <path
-              d="M-40 390 C 100 300, 180 450, 320 360 S 560 160, 840 260"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <path
-              d="M-40 430 C 100 340, 180 490, 320 400 S 560 200, 840 300"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <circle
-              cx="680"
-              cy="90"
-              r="115"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <circle
-              cx="680"
-              cy="90"
-              r="75"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
           <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">

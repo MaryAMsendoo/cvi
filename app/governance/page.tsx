@@ -18,21 +18,6 @@ export default function GovernancePage() {
           HERO
       ========================================================= */}
       <section className="relative overflow-hidden bg-foreground text-white">
-        <div className="pointer-events-none absolute inset-0 opacity-[0.12]">
-          <svg
-            className="h-full w-full"
-            viewBox="0 0 800 500"
-            preserveAspectRatio="xMidYMid slice"
-            aria-hidden="true"
-          >
-            <path d="M80 70 H720 V430 H80 Z" fill="none" stroke="currentColor" strokeWidth="1" />
-            <path d="M140 120 H660 V380 H140 Z" fill="none" stroke="currentColor" strokeWidth="1" />
-            <path d="M200 170 H600 V330 H200 Z" fill="none" stroke="currentColor" strokeWidth="1" />
-            <line x1="80" y1="250" x2="720" y2="250" stroke="currentColor" strokeWidth="1" />
-            <line x1="400" y1="70" x2="400" y2="430" stroke="currentColor" strokeWidth="1" />
-            <circle cx="400" cy="250" r="35" fill="none" stroke="currentColor" strokeWidth="1" />
-          </svg>
-        </div>
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
           <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
