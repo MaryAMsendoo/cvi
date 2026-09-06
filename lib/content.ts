@@ -61,6 +61,7 @@ export const people: Person[] = [
   {
     name: "Tuleun A. Kelvin",
     role: "Programs & Learning Delivery Lead",
+        image: "/tuleunkelvin.jpeg",
     bio: "Community builder and learning delivery specialist in Benue.",
     fullBio:
       "State Programme Manager for the national 3MTT programme in Benue and State Community Manager for Google Developer Groups. He leads the national 3MTT Knowledge Showcase build challenge, which has received more than 33,000 product submissions from 16,000 learners since February 2024. He also grew Benue's 3MTT community from about 200 to more than 6,000 learners and established Benue's Learn2Earn learning centre.",
