@@ -31,7 +31,7 @@ export default function ContactPage() {
           CONTACT DETAILS
       ========================================================= */}
       <section className="relative bg-background">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -53,7 +53,7 @@ export default function ContactPage() {
 
             <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2">
               {/* Address */}
-              <div className="bg-surface p-8 sm:p-10">
+              <div className="bg-surface p-6 sm:p-7">
                 <MapPin className="h-6 w-6 text-accent" />
 
                 <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
@@ -82,7 +82,7 @@ export default function ContactPage() {
               </div>
 
               {/* Email */}
-              <div className="bg-surface p-8 sm:p-10">
+              <div className="bg-surface p-6 sm:p-7">
                 <Mail className="h-6 w-6 text-accent" />
 
                 <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
@@ -112,7 +112,7 @@ export default function ContactPage() {
               </div>
 
               {/* Phone */}
-              <div className="bg-surface p-8 sm:p-10">
+              <div className="bg-surface p-6 sm:p-7">
                 <Phone className="h-6 w-6 text-accent" />
 
                 <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
@@ -142,7 +142,7 @@ export default function ContactPage() {
               </div>
 
               {/* Direct contact */}
-              <div className="bg-surface p-8 sm:p-10">
+              <div className="bg-surface p-6 sm:p-7">
                 <MessageSquare className="h-6 w-6 text-accent" />
 
                 <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
@@ -176,7 +176,7 @@ export default function ContactPage() {
           ENQUIRY ROUTES
       ========================================================= */}
       <section className="relative bg-surface-muted">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -204,7 +204,7 @@ export default function ContactPage() {
                   </p>
 
                   <h2
-                    className="mt-3 text-3xl text-foreground"
+                    className="mt-3 text-2xl leading-snug text-foreground sm:text-3xl"
                     style={{
                       fontFamily: "var(--font-display)",
                       fontWeight: 500,
@@ -235,7 +235,7 @@ export default function ContactPage() {
                   </p>
 
                   <h2
-                    className="mt-3 text-3xl text-foreground"
+                    className="mt-3 text-2xl leading-snug text-foreground sm:text-3xl"
                     style={{
                       fontFamily: "var(--font-display)",
                       fontWeight: 500,
@@ -266,7 +266,7 @@ export default function ContactPage() {
                   </p>
 
                   <h2
-                    className="mt-3 text-3xl text-foreground"
+                    className="mt-3 text-2xl leading-snug text-foreground sm:text-3xl"
                     style={{
                       fontFamily: "var(--font-display)",
                       fontWeight: 500,
@@ -294,7 +294,7 @@ export default function ContactPage() {
           SOCIAL
       ========================================================= */}
       <section className="relative bg-background">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10 sm:py-16">
           <div className="grid gap-10 border-t border-border pt-8 sm:grid-cols-[1fr_auto] sm:items-end">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
@@ -302,7 +302,7 @@ export default function ContactPage() {
               </p>
 
               <h2
-                className="mt-4 text-3xl tracking-[-0.02em] text-foreground sm:text-4xl"
+                className="mt-4 text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 500,
@@ -372,18 +372,18 @@ export default function ContactPage() {
           </svg>
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="relative mx-auto max-w-6xl px-6 py-14 sm:px-10 sm:py-16">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
+              <span className="h-5 w-1 rounded-full bg-accent" />
 
-              <span className="text-sm font-medium text-white/60">
+              <span className="text-xs font-medium uppercase tracking-wide text-white/55">
                 Citizens Voices International
               </span>
             </div>
 
             <h2
-              className="mt-8 text-4xl leading-[1.03] tracking-[-0.025em] sm:text-5xl lg:text-6xl"
+              className="mt-4 text-2xl leading-snug sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -394,11 +394,11 @@ export default function ContactPage() {
 
             <Link
               href="/get-involved"
-              className="group mt-9 inline-flex items-center gap-4 rounded-md bg-accent px-6 py-4 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
+              className="group mt-6 inline-flex items-center gap-3 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
             >
               Get involved
 
-              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

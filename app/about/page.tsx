@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { ArrowUpRight, Check } from "lucide-react";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
 import { PageHero } from "@/components/ui/PageHero";
@@ -50,14 +50,12 @@ export default function Page() {
       <PageHero
         eyebrow="About Citizens Voices International"
         title="Building the capacity of citizens to shape better futures."
-        description="Citizens Voices International is a nonprofit organisation working from Makurdi, Benue State, to empower young people, strengthen inclusive governance, and develop human capital across Nigeria's Middle Belt."
+        image="/p5.jpg"
       />
 
       {/* WHO WE ARE */}
-      <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
-        {/* <SectionBackdrop variant="d" tone="light" /> */}
-
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
+      <section className="relative overflow-hidden bg-surface py-16 sm:py-20">
+        <div className="relative mx-auto grid max-w-6xl gap-10 px-6 sm:px-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-14">
           {/* IMAGE */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
@@ -65,7 +63,7 @@ export default function Page() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative overflow-hidden rounded-[2rem]">
+            <div className="relative overflow-hidden rounded-2xl">
               <div className="relative aspect-[4/3]">
                 <Image
                   src="/p26.jpg"
@@ -75,13 +73,13 @@ export default function Page() {
                 />
               </div>
 
-              <div className="absolute bottom-5 left-5 max-w-xs rounded-xl border border-white/20 bg-foreground/85 p-5 text-white backdrop-blur-md">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
+              <div className="absolute bottom-4 left-4 max-w-xs rounded-lg border border-white/20 bg-foreground/85 p-4 text-white backdrop-blur-md">
+                <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-accent">
                   Our starting point
                 </p>
 
                 <p
-                  className="mt-2 text-lg leading-snug"
+                  className="mt-1.5 text-base leading-snug"
                   style={{
                     fontFamily: "var(--font-display)",
                     fontWeight: 500,
@@ -101,14 +99,14 @@ export default function Page() {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-foreground/60">
+              <span className="h-5 w-1 rounded-full bg-accent" />
+              <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
                 Who we are
               </span>
             </div>
 
             <h2
-              className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
+              className="mt-4 max-w-lg text-2xl leading-snug text-foreground sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -117,7 +115,7 @@ export default function Page() {
               A young organisation focused on practical change.
             </h2>
 
-            <div className="mt-7 max-w-xl space-y-5 text-base leading-7 text-foreground/65">
+            <div className="mt-5 max-w-lg space-y-4 text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
               <p>
                 CVI is a nonprofit based in Makurdi, Nigeria, helping young people
                 access skills, opportunities, and platforms to make a difference.
@@ -133,21 +131,21 @@ export default function Page() {
       </section>
 
       {/* WHY CVI */}
-      <section className="relative overflow-hidden bg-background py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-background py-16 sm:py-20">
         <SectionBackdrop variant="e" tone="light" />
 
-        <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
-          <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr]">
+        <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+          <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
             <div>
               <div className="flex items-center gap-3">
-                <span className="h-6 w-1.5 rounded-full bg-accent" />
-                <span className="text-sm font-medium text-foreground/60">
+                <span className="h-5 w-1 rounded-full bg-accent" />
+                <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
                   Why CVI exists
                 </span>
               </div>
 
               <h2
-                className="mt-5 text-3xl leading-tight text-foreground sm:text-5xl"
+                className="mt-4 text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 500,
@@ -157,8 +155,8 @@ export default function Page() {
               </h2>
             </div>
 
-            <div className="max-w-3xl">
-              <p className="text-lg leading-8 text-foreground/65">
+            <div className="max-w-2xl">
+              <p className="text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
                 Across Nigeria&apos;s Middle Belt, many young people face
                 overlapping barriers to skills development, economic
                 opportunity, civic participation, and meaningful networks.
@@ -166,7 +164,7 @@ export default function Page() {
                 barriers.
               </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {[
                   "Access to practical skills and learning",
                   "Greater participation in civic life",
@@ -175,10 +173,10 @@ export default function Page() {
                 ].map((item) => (
                   <div
                     key={item}
-                    className="flex gap-3 border-t border-border pt-4"
+                    className="flex gap-3 border-t border-border pt-3"
                   >
-                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
-                      <Check size={14} strokeWidth={2.5} />
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+                      <Check size={12} strokeWidth={2.5} />
                     </span>
                     <p className="text-sm leading-6 text-foreground/70">
                       {item}
@@ -192,20 +190,20 @@ export default function Page() {
       </section>
 
       {/* THEMATIC AREAS */}
-      <section className="relative overflow-hidden bg-surface-muted py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-surface-muted py-16 sm:py-20">
         <SectionBackdrop variant="b" tone="light" />
 
-        <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
-          <div className="max-w-2xl">
+        <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+          <div className="max-w-xl">
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-foreground/60">
+              <span className="h-5 w-1 rounded-full bg-accent" />
+              <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
                 What we focus on
               </span>
             </div>
 
             <h2
-              className="mt-5 text-3xl leading-tight text-foreground sm:text-5xl"
+              className="mt-4 text-2xl leading-snug text-foreground sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -215,7 +213,7 @@ export default function Page() {
             </h2>
           </div>
 
-          <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-3">
+          <div className="mt-10 grid gap-px overflow-hidden rounded-xl border border-border bg-border md:grid-cols-3">
             {THEMES.map((theme, index) => (
               <motion.article
                 key={theme.number}
@@ -223,14 +221,14 @@ export default function Page() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="bg-surface p-7 sm:p-9"
+                className="bg-surface p-6 sm:p-7"
               >
                 <p className="text-xs font-bold tracking-[0.18em] text-accent">
                   {theme.number}
                 </p>
 
                 <h3
-                  className="mt-12 text-2xl text-foreground"
+                  className="mt-8 text-lg text-foreground"
                   style={{
                     fontFamily: "var(--font-display)",
                     fontWeight: 500,
@@ -239,7 +237,7 @@ export default function Page() {
                   {theme.title}
                 </h3>
 
-                <p className="mt-4 text-sm leading-6 text-foreground/60">
+                <p className="mt-3 text-sm leading-6 text-foreground/60">
                   {theme.text}
                 </p>
               </motion.article>
@@ -249,20 +247,20 @@ export default function Page() {
       </section>
 
       {/* TIMELINE */}
-      <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-surface py-16 sm:py-20">
         <SectionBackdrop variant="e" tone="light" />
 
-        <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
-          <div className="max-w-2xl">
+        <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+          <div className="max-w-xl">
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-foreground/60">
+              <span className="h-5 w-1 rounded-full bg-accent" />
+              <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
                 Our journey
               </span>
             </div>
 
             <h2
-              className="mt-5 text-3xl leading-tight text-foreground sm:text-5xl"
+              className="mt-4 text-2xl leading-snug text-foreground sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -272,10 +270,10 @@ export default function Page() {
             </h2>
           </div>
 
-          <div className="relative mt-16">
-            <div className="absolute left-[11px] top-2 hidden h-[calc(100%-1rem)] w-px bg-border sm:block" />
+          <div className="relative mt-12">
+            <div className="absolute left-[9px] top-2 hidden h-[calc(100%-1rem)] w-px bg-border sm:block" />
 
-            <div className="space-y-12">
+            <div className="space-y-10">
               {TIMELINE.map((item, index) => (
                 <motion.div
                   key={`${item.year}-${item.title}`}
@@ -283,12 +281,12 @@ export default function Page() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.5, delay: index * 0.08 }}
-                  className="relative grid gap-4 sm:grid-cols-[140px_1fr] sm:gap-8"
+                  className="relative grid gap-3 sm:grid-cols-[120px_1fr] sm:gap-6"
                 >
-                  <div className="relative flex items-start gap-4">
-                    <span className="mt-1.5 hidden h-2.5 w-2.5 shrink-0 rounded-full bg-accent ring-4 ring-surface sm:block" />
+                  <div className="relative flex items-start gap-3">
+                    <span className="mt-1 hidden h-2 w-2 shrink-0 rounded-full bg-accent ring-4 ring-surface sm:block" />
                     <p
-                      className="text-2xl text-foreground"
+                      className="text-lg text-foreground"
                       style={{
                         fontFamily: "var(--font-display)",
                         fontWeight: 500,
@@ -298,11 +296,11 @@ export default function Page() {
                     </p>
                   </div>
 
-                  <div className="border-l-2 border-accent/20 pl-5 sm:border-l-0 sm:pl-0">
-                    <h3 className="text-lg font-bold text-foreground">
+                  <div className="border-l-2 border-accent/20 pl-4 sm:border-l-0 sm:pl-0">
+                    <h3 className="text-base font-bold text-foreground">
                       {item.title}
                     </h3>
-                    <p className="mt-2 max-w-2xl text-sm leading-6 text-foreground/60">
+                    <p className="mt-1.5 max-w-xl text-sm leading-6 text-foreground/60">
                       {item.text}
                     </p>
                   </div>
@@ -314,20 +312,20 @@ export default function Page() {
       </section>
 
       {/* GOVERNANCE SNAPSHOT */}
-      <section className="relative overflow-hidden bg-foreground py-24 text-white sm:py-28">
+      <section className="relative overflow-hidden bg-foreground py-16 text-white sm:py-20">
         <SectionBackdrop variant="f" tone="dark" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+        <div className="relative mx-auto grid max-w-6xl gap-10 px-6 sm:px-10 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div>
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-white/60">
+              <span className="h-5 w-1 rounded-full bg-accent" />
+              <span className="text-xs font-medium uppercase tracking-wide text-white/55">
                 Governance at a glance
               </span>
             </div>
 
             <h2
-              className="mt-5 max-w-xl text-3xl leading-tight sm:text-5xl"
+              className="mt-4 max-w-lg text-2xl leading-snug sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -336,7 +334,7 @@ export default function Page() {
               Small by design. Serious about accountability.
             </h2>
 
-            <p className="mt-6 max-w-xl leading-7 text-white/60">
+            <p className="mt-4 max-w-lg text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
               CVI currently operates with two registered trustees who provide
               joint oversight of strategy, financial accountability, and
               programme integrity.
@@ -344,27 +342,27 @@ export default function Page() {
 
             <Link
               href="/governance"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 hover:bg-primary-strong"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 hover:bg-primary-strong"
             >
               Explore governance
-              <ArrowUpRight size={16} aria-hidden="true" />
+              <ArrowUpRight size={14} aria-hidden="true" />
             </Link>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-xl border border-white/10 bg-white/5 p-7">
-              <p className="text-5xl text-accent">02</p>
-              <p className="mt-3 text-sm font-bold">Registered trustees</p>
-              <p className="mt-2 text-sm leading-6 text-white/50">
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div className="rounded-lg border border-white/10 bg-white/5 p-5">
+              <p className="text-3xl text-accent">02</p>
+              <p className="mt-2 text-sm font-bold">Registered trustees</p>
+              <p className="mt-1.5 text-xs leading-5 text-white/50">
                 Chairman and Secretary providing joint organisational
                 oversight.
               </p>
             </div>
 
-            <div className="rounded-xl border border-white/10 bg-white/5 p-7">
-              <p className="text-5xl text-accent">04</p>
-              <p className="mt-3 text-sm font-bold">Full-time staff</p>
-              <p className="mt-2 text-sm leading-6 text-white/50">
+            <div className="rounded-lg border border-white/10 bg-white/5 p-5">
+              <p className="text-3xl text-accent">04</p>
+              <p className="mt-2 text-sm font-bold">Full-time staff</p>
+              <p className="mt-1.5 text-xs leading-5 text-white/50">
                 A lean team delivering programmes and organisational functions.
               </p>
             </div>
@@ -373,15 +371,15 @@ export default function Page() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative overflow-hidden bg-background py-20 sm:py-24">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 sm:px-10 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">
+      <section className="relative overflow-hidden bg-background py-14 sm:py-16">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 sm:px-10 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-xl">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
               Continue exploring
             </p>
 
             <h2
-              className="mt-4 text-3xl leading-tight text-foreground sm:text-4xl"
+              className="mt-3 text-2xl leading-snug text-foreground sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -394,18 +392,18 @@ export default function Page() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/team"
-              className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-bold text-foreground transition-colors hover:border-primary hover:bg-surface-muted"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2.5 text-sm font-bold text-foreground transition-colors hover:border-primary hover:bg-surface-muted"
             >
               Our team
-              <ArrowUpRight size={16} aria-hidden="true" />
+              <ArrowUpRight size={14} aria-hidden="true" />
             </Link>
 
             <Link
               href="/get-involved"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-primary-strong"
+              className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition-colors hover:bg-primary-strong"
             >
               Partner with us
-              <ArrowUpRight size={16} aria-hidden="true" />
+              <ArrowUpRight size={14} aria-hidden="true" />
             </Link>
           </div>
         </div>

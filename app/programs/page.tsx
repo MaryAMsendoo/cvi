@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import {
   ArrowDown,
   ArrowUpRight,
@@ -44,13 +44,13 @@ export default function Page() {
       />
 
       {/* FEATURED PROGRAMME */}
-      <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-surface py-16 sm:py-20">
         {/* <SectionBackdrop variant="f" tone="light" /> */}
 
-        <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
           <div className="flex items-center gap-3">
-            <span className="h-6 w-1.5 rounded-full bg-accent" />
-            <span className="text-sm font-medium text-foreground/60">
+            <span className="h-5 w-1 rounded-full bg-accent" />
+            <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
               Completed programme · June 2026
             </span>
           </div>
@@ -93,7 +93,7 @@ export default function Page() {
               </p>
 
               <h2
-                className="mt-4 text-3xl leading-tight text-foreground sm:text-5xl"
+                className="mt-4 text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 500,
@@ -102,13 +102,13 @@ export default function Page() {
                 Digital Skills Makurdi AI Bootcamp
               </h2>
 
-              <p className="mt-6 text-base leading-7 text-foreground/65">
+              <p className="mt-6 text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
                 In June 2026, CVI delivered its first completed programme: a
                 digital skills and artificial intelligence bootcamp for young
                 people in Makurdi, Benue State.
               </p>
 
-              <p className="mt-4 text-base leading-7 text-foreground/65">
+              <p className="mt-4 text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
                 The programme introduced participants to foundational AI
                 concepts and practical digital skills, creating an entry point
                 for young people to better understand and engage with emerging
@@ -137,21 +137,21 @@ export default function Page() {
       </section>
 
       {/* WHAT THE PROGRAMME COVERED */}
-      <section className="relative overflow-hidden bg-background py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-background py-16 sm:py-20">
         <SectionBackdrop variant="h" tone="light" />
 
-        <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <div className="flex items-center gap-3">
-                <span className="h-6 w-1.5 rounded-full bg-accent" />
-                <span className="text-sm font-medium text-foreground/60">
+                <span className="h-5 w-1 rounded-full bg-accent" />
+                <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
                   Programme focus
                 </span>
               </div>
 
               <h2
-                className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
+                className="mt-4 max-w-xl text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 500,
@@ -160,7 +160,7 @@ export default function Page() {
                 Learning that starts with what people can use.
               </h2>
 
-              <p className="mt-6 max-w-md text-base leading-7 text-foreground/60">
+              <p className="mt-6 max-w-md text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
                 The bootcamp was designed as a practical introduction to
                 artificial intelligence and digital skills for young people in
                 Makurdi.
@@ -178,7 +178,7 @@ export default function Page() {
                     duration: 0.5,
                     delay: index * 0.08,
                   }}
-                  className="bg-surface p-7 sm:p-8"
+                  className="bg-surface p-6 sm:p-7"
                 >
                   <p className="text-xs font-bold tracking-[0.18em] text-accent">
                     {area.number}
@@ -205,21 +205,21 @@ export default function Page() {
       </section>
 
       {/* PROGRAMME FACTS */}
-      <section className="relative overflow-hidden bg-surface-muted py-24 sm:py-28">
+      <section className="relative overflow-hidden bg-surface-muted py-16 sm:py-20">
         <SectionBackdrop variant="c" tone="light" />
 
-        <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
+        <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
           <div className="flex items-center gap-3">
-            <span className="h-6 w-1.5 rounded-full bg-accent" />
-            <span className="text-sm font-medium text-foreground/60">
+            <span className="h-5 w-1 rounded-full bg-accent" />
+            <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
               At a glance
             </span>
           </div>
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
-            <div className="rounded-2xl border border-border bg-surface p-7 sm:p-9">
+            <div className="rounded-2xl border border-border bg-surface p-6 sm:p-7">
               <p
-                className="text-5xl text-foreground sm:text-6xl"
+                className="text-3xl text-foreground"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 500,
@@ -237,9 +237,9 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-border bg-surface p-7 sm:p-9">
+            <div className="rounded-2xl border border-border bg-surface p-6 sm:p-7">
               <p
-                className="text-5xl text-foreground sm:text-6xl"
+                className="text-3xl text-foreground"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 500,
@@ -257,9 +257,9 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-border bg-surface p-7 sm:p-9">
+            <div className="rounded-2xl border border-border bg-surface p-6 sm:p-7">
               <p
-                className="text-5xl text-foreground sm:text-6xl"
+                className="text-3xl text-foreground"
                 style={{
                   fontFamily: "var(--font-display)",
                   fontWeight: 500,
@@ -281,15 +281,14 @@ export default function Page() {
       </section>
 
       {/* MOMENTS FROM THE BOOTCAMP */}
-      <section className="relative overflow-hidden bg-background py-24 sm:py-28">
-        <SectionBackdrop variant="a" tone="light" />
+      <section className="relative overflow-hidden bg-background py-16 sm:py-20">
         <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
           <div className="flex items-center gap-3">
-            <span className="h-6 w-1.5 rounded-full bg-accent" />
-            <span className="text-sm font-medium text-foreground/60">Moments from the bootcamp</span>
+            <span className="h-5 w-1 rounded-full bg-accent" />
+            <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">Moments from the bootcamp</span>
           </div>
           <h2
-            className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
+            className="mt-4 max-w-xl text-2xl leading-snug text-foreground sm:text-3xl"
             style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
           >
             A look inside the cohort
@@ -311,20 +310,19 @@ export default function Page() {
       </section>
 
       {/* PARTNER / SPONSOR */}
-      <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
-        <SectionBackdrop variant="i" tone="light" />
+      <section className="relative overflow-hidden bg-surface py-16 sm:py-20">
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_0.8fr] lg:items-center">
+        <div className="relative mx-auto grid max-w-6xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_0.8fr] lg:items-center">
           <div>
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-foreground/60">
+              <span className="h-5 w-1 rounded-full bg-accent" />
+              <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
                 Programme support
               </span>
             </div>
 
             <h2
-              className="mt-5 max-w-2xl text-3xl leading-tight text-foreground sm:text-5xl"
+              className="mt-4 max-w-2xl text-2xl leading-snug text-foreground sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -334,7 +332,7 @@ export default function Page() {
               Alumni Association of Nigeria.
             </h2>
 
-            <p className="mt-6 max-w-2xl text-base leading-7 text-foreground/60">
+            <p className="mt-6 max-w-2xl text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
               The Mandela Washington Fellows Alumni Association of Nigeria
               sponsored the June 2026 Digital Skills Makurdi AI Bootcamp,
               supporting CVI&apos;s first completed training programme.
@@ -347,7 +345,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="relative rounded-2xl border border-border bg-background p-8 sm:p-10">
+          <div className="relative rounded-2xl border border-border bg-background p-6 sm:p-7">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
               Programme supporter
             </p>
@@ -365,20 +363,20 @@ export default function Page() {
       </section>
 
       {/* WHAT'S NEXT */}
-      <section className="relative overflow-hidden bg-foreground py-24 text-white sm:py-28">
+      <section className="relative overflow-hidden bg-foreground py-14 text-white sm:py-16">
         <SectionBackdrop variant="l" tone="dark" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-6 sm:px-10 md:grid-cols-[1fr_auto] md:items-end">
+        <div className="relative mx-auto grid max-w-6xl gap-10 px-6 sm:px-10 md:grid-cols-[1fr_auto] md:items-end">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-white/60">
+              <span className="h-5 w-1 rounded-full bg-accent" />
+              <span className="text-xs font-medium uppercase tracking-wide text-white/55">
                 Looking ahead
               </span>
             </div>
 
             <h2
-              className="mt-5 text-3xl leading-tight sm:text-5xl"
+              className="mt-4 text-2xl leading-snug sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -387,7 +385,7 @@ export default function Page() {
               One completed programme is a beginning, not a finished story.
             </h2>
 
-            <p className="mt-6 max-w-xl leading-7 text-white/60">
+            <p className="mt-6 max-w-xl text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
               CVI is continuing to develop its programme portfolio around youth
               empowerment, inclusive governance, and human capital development.
               Future programmes will build on what we learn from implementation
@@ -397,10 +395,10 @@ export default function Page() {
 
           <Link
             href="/get-involved"
-            className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 hover:bg-primary-strong"
+            className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition-transform hover:-translate-y-0.5 hover:bg-primary-strong"
           >
             Discuss a partnership
-            <ArrowUpRight size={16} aria-hidden="true" />
+            <ArrowUpRight size={14} aria-hidden="true" />
           </Link>
         </div>
       </section>

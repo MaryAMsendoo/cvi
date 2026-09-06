@@ -24,35 +24,34 @@ export function PageHero({
               alt=""
               fill
               priority
-              className="object-cover object-center grayscale"
+              className="object-cover object-center opacity-25 grayscale"
             />
           </div>
-          {/* Desaturated + darkened so the photo reads as texture, not a competing image */}
-          <div className="absolute inset-0 bg-foreground/88" />
-          <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(5,55,63,0.75)_0%,rgba(5,32,38,0.55)_60%,rgba(5,32,38,0.85)_100%)]" />
+          <div className="absolute inset-0 bg-foreground/70" />
         </>
       )}
 
-      <div className="relative mx-auto max-w-5xl px-6 py-20 sm:px-10 sm:py-28">
-        <div className="flex items-start gap-5">
-          <span className="mt-2 h-16 w-1 shrink-0 rounded-full bg-accent sm:h-20" />
+      <div className="relative mx-auto max-w-3xl px-6 py-14 sm:px-10 sm:py-16">
+        <div className="flex items-center gap-4">
+          <span className="h-10 w-[3px] shrink-0 rounded-full bg-accent sm:h-12" />
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/50">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45">
               {eyebrow}
             </p>
             <h1
-              className="mt-3 max-w-3xl text-4xl leading-[1.05] tracking-[-0.02em] sm:text-5xl lg:text-6xl"
+              className="mt-1.5 max-w-xl text-xl leading-snug tracking-[-0.01em] sm:text-2xl"
               style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
             >
               {title}
             </h1>
-            {description && (
-              <p className="mt-5 max-w-xl text-base leading-7 text-white/60">
-                {description}
-              </p>
-            )}
           </div>
         </div>
+
+        {description && (
+          <p className="mt-5 max-w-lg text-sm leading-6 text-white/55 sm:ml-[calc(3px+1rem)]">
+            {description}
+          </p>
+        )}
       </div>
     </section>
   );

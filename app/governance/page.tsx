@@ -29,7 +29,7 @@ export default function GovernancePage() {
           GOVERNANCE INTRO
       ========================================================= */}
       <section className="relative bg-background">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -43,13 +43,13 @@ export default function GovernancePage() {
 
             <div className="max-w-4xl">
               <h2
-                className="text-4xl leading-[1.03] tracking-[-0.025em] text-foreground sm:text-5xl lg:text-6xl"
+                className="text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
                 A lean governance structure with oversight close to delivery.
               </h2>
 
-              <p className="mt-8 max-w-2xl text-base leading-8 text-foreground/65">
+              <p className="mt-6 max-w-2xl text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
                 Citizens Voices International is governed by two registered
                 trustees who provide joint oversight of organisational
                 strategy, financial accountability and programme integrity.
@@ -63,7 +63,7 @@ export default function GovernancePage() {
           LEGAL IDENTITY
       ========================================================= */}
       <section className="relative bg-surface-muted">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="mb-12">
             <div className="flex items-center gap-4">
               <span className="text-xs font-bold tracking-[0.18em] text-accent">02</span>
@@ -75,7 +75,7 @@ export default function GovernancePage() {
           </div>
 
           <div className="grid gap-px overflow-hidden rounded-xl border border-border bg-border md:grid-cols-2">
-            <div className="bg-background p-8 sm:p-10">
+            <div className="bg-background p-6 sm:p-7">
               <Building2 className="h-6 w-6 text-accent" />
               <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
                 Registered name
@@ -91,7 +91,7 @@ export default function GovernancePage() {
               </p>
             </div>
 
-            <div className="bg-background p-8 sm:p-10">
+            <div className="bg-background p-6 sm:p-7">
               <Landmark className="h-6 w-6 text-accent" />
               <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
                 Registration
@@ -107,7 +107,7 @@ export default function GovernancePage() {
               </p>
             </div>
 
-            <div className="bg-background p-8 sm:p-10">
+            <div className="bg-background p-6 sm:p-7">
               <FileCheck2 className="h-6 w-6 text-accent" />
               <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
                 Tax identification
@@ -123,7 +123,7 @@ export default function GovernancePage() {
               </p>
             </div>
 
-            <div className="bg-background p-8 sm:p-10">
+            <div className="bg-background p-6 sm:p-7">
               <ShieldCheck className="h-6 w-6 text-accent" />
               <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-foreground/40">
                 Operational history
@@ -147,7 +147,7 @@ export default function GovernancePage() {
           BOARD — updated with credentials
       ========================================================= */}
       <section className="relative bg-background">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -227,7 +227,7 @@ export default function GovernancePage() {
           ACCOUNTABILITY
       ========================================================= */}
       <section className="relative bg-foreground text-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -241,13 +241,13 @@ export default function GovernancePage() {
 
             <div className="max-w-3xl">
               <h2
-                className="text-4xl leading-[1.04] tracking-[-0.025em] sm:text-5xl"
+                className="text-2xl leading-snug sm:text-3xl"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
                 Transparency should reflect where an organisation actually is.
               </h2>
 
-              <p className="mt-7 text-base leading-8 text-white/60">
+              <p className="mt-6 text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
                 CVI was formally incorporated in June 2026 and has not yet
                 produced audited financial statements. We do not present
                 unaudited information as audited reporting.
@@ -284,7 +284,7 @@ export default function GovernancePage() {
           POLICIES
       ========================================================= */}
       <section className="relative bg-surface-muted">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -298,13 +298,13 @@ export default function GovernancePage() {
 
             <div>
               <h2
-                className="max-w-3xl text-4xl leading-[1.04] tracking-[-0.025em] text-foreground sm:text-5xl"
+                className="max-w-3xl text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
                 Building the systems that support responsible growth.
               </h2>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-foreground/60">
+              <p className="mt-6 max-w-2xl text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
                 CVI is developing its internal governance and programme
                 systems as the organisation grows. The current priority is to
                 formalise the policies and monitoring structures required for
@@ -361,14 +361,14 @@ export default function GovernancePage() {
           TEAM LINK
       ========================================================= */}
       <section className="relative bg-background">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10 sm:py-16">
           <div className="flex flex-col gap-8 border-t border-border pt-8 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
                 Leadership
               </p>
               <h2
-                className="mt-4 text-3xl tracking-[-0.02em] text-foreground sm:text-4xl"
+                className="mt-4 text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
                 Meet the people behind the organisation.
@@ -412,21 +412,21 @@ export default function GovernancePage() {
           </svg>
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="relative mx-auto max-w-6xl px-6 py-14 sm:px-10 sm:py-16">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-white/60">Work with CVI</span>
+              <span className="h-5 w-1 rounded-full bg-accent" />
+              <span className="text-xs font-medium uppercase tracking-wide text-white/55">Work with CVI</span>
             </div>
 
             <h2
-              className="mt-8 text-4xl leading-[1.03] tracking-[-0.025em] sm:text-5xl lg:text-6xl"
+              className="mt-4 text-2xl leading-snug sm:text-3xl"
               style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
             >
               Interested in supporting our work?
             </h2>
 
-            <p className="mt-7 max-w-2xl text-base leading-8 text-white/60">
+            <p className="mt-6 max-w-2xl text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
               We welcome conversations with funders, institutions and partners
               interested in strengthening youth empowerment and inclusive
               development in Benue State.
@@ -434,10 +434,10 @@ export default function GovernancePage() {
 
             <Link
               href="/get-involved"
-              className="group mt-9 inline-flex items-center gap-4 rounded-md bg-accent px-6 py-4 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
+              className="group mt-6 inline-flex items-center gap-3 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
             >
               Partner with us
-              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

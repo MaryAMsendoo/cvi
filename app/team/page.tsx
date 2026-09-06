@@ -30,14 +30,14 @@ export default function TeamPage() {
       />
 
       {/* Everything below remains unchanged */}
-      <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+      <div className="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:px-10">
         <div className="mb-16 grid gap-4 sm:grid-cols-3">
           {stats.slice(1, 4).map((stat) => (
             <div
               key={stat.label}
               className="border-l-4 border-accent pl-5"
             >
-              <p className="text-4xl font-bold text-primary-strong">
+              <p className="text-3xl font-bold text-primary-strong">
                 {stat.value}
               </p>
 

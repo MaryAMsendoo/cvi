@@ -57,7 +57,7 @@ export default function GetInvolvedPage() {
           PATHWAYS
       ========================================================= */}
       <section className="relative bg-background">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -96,7 +96,7 @@ export default function GetInvolvedPage() {
                           </div>
 
                           <h3
-                            className="text-2xl text-foreground sm:text-3xl"
+                            className="text-2xl leading-snug text-foreground sm:text-3xl"
                             style={{
                               fontFamily: "var(--font-display)",
                               fontWeight: 500,
@@ -106,7 +106,7 @@ export default function GetInvolvedPage() {
                           </h3>
                         </div>
 
-                        <p className="mt-5 max-w-xl text-sm leading-7 text-foreground/55">
+                        <p className="mt-5 max-w-xl text-sm leading-6 text-foreground/55 sm:text-base sm:leading-7">
                           {pathway.description}
                         </p>
                       </div>
@@ -125,7 +125,7 @@ export default function GetInvolvedPage() {
           DIRECT CONTACT
       ========================================================= */}
       <section className="relative bg-surface-muted">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -145,7 +145,7 @@ export default function GetInvolvedPage() {
               {/* Email */}
               <a
                 href="mailto:cvi@gmail.com"
-                className="group bg-surface p-8 transition-colors duration-300 hover:bg-background sm:p-10"
+                className="group bg-surface p-6 transition-colors duration-300 hover:bg-background sm:p-7"
               >
                 <Mail className="h-6 w-6 text-accent" />
 
@@ -172,7 +172,7 @@ export default function GetInvolvedPage() {
               {/* Phone */}
               <a
                 href="tel:07011308129"
-                className="group bg-surface p-8 transition-colors duration-300 hover:bg-background sm:p-10"
+                className="group bg-surface p-6 transition-colors duration-300 hover:bg-background sm:p-7"
               >
                 <Phone className="h-6 w-6 text-accent" />
 
@@ -201,7 +201,7 @@ export default function GetInvolvedPage() {
                 href="https://www.facebook.com/100069913210617/posts/1304950281845400/?app=fbl"
                 target="_blank"
                 rel="noreferrer"
-                className="group bg-surface p-8 transition-colors duration-300 hover:bg-background sm:p-10"
+                className="group bg-surface p-6 transition-colors duration-300 hover:bg-background sm:p-7"
                 aria-label="Follow CVI on Facebook"
               >
                 <div className="flex h-6 w-6 items-center justify-center text-accent">
@@ -233,7 +233,7 @@ export default function GetInvolvedPage() {
                 href="/cvi-organizational-profile.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="group bg-surface p-8 transition-colors duration-300 hover:bg-background sm:p-10"
+                className="group bg-surface p-6 transition-colors duration-300 hover:bg-background sm:p-7"
               >
                 <FileText className="h-6 w-6 text-accent" />
 
@@ -265,7 +265,7 @@ export default function GetInvolvedPage() {
           INQUIRY FORM
       ========================================================= */}
       <section className="relative bg-background">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
               <div className="flex items-center gap-4">
@@ -284,7 +284,7 @@ export default function GetInvolvedPage() {
 
             <form
               id="contact-form"
-              className="rounded-xl border border-border bg-surface p-7 sm:p-10"
+              className="rounded-xl border border-border bg-surface p-6 sm:p-7"
               action="mailto:cvi@gmail.com"
               method="post"
               encType="text/plain"
@@ -296,7 +296,7 @@ export default function GetInvolvedPage() {
                   </p>
 
                   <h3
-                    className="mt-3 text-3xl text-foreground"
+                    className="mt-3 text-2xl leading-snug text-foreground sm:text-3xl"
                     style={{
                       fontFamily: "var(--font-display)",
                       fontWeight: 500,
@@ -356,7 +356,7 @@ export default function GetInvolvedPage() {
 
                 <button
                   type="submit"
-                  className="group mt-2 inline-flex w-fit items-center gap-3 rounded-md bg-accent px-6 py-4 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
+                  className="group mt-2 inline-flex w-fit items-center gap-3 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
                 >
                   Send inquiry
                   <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -403,18 +403,18 @@ export default function GetInvolvedPage() {
           </svg>
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
+        <div className="relative mx-auto max-w-6xl px-6 py-14 sm:px-10 sm:py-16">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
+              <span className="h-5 w-1 rounded-full bg-accent" />
 
-              <span className="text-sm font-medium text-white/60">
+              <span className="text-xs font-medium uppercase tracking-wide text-white/55">
                 Citizens Voices International
               </span>
             </div>
 
             <h2
-              className="mt-8 text-4xl leading-[1.03] tracking-[-0.025em] sm:text-5xl lg:text-6xl"
+              className="mt-4 text-2xl leading-snug sm:text-3xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
@@ -426,7 +426,7 @@ export default function GetInvolvedPage() {
             <div className="mt-9 flex flex-wrap gap-4">
               <a
                 href="mailto:cvi@gmail.com"
-                className="group inline-flex items-center gap-4 rounded-md bg-accent px-6 py-4 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
+                className="group inline-flex items-center gap-3 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
               >
                 Email CVI
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -434,7 +434,7 @@ export default function GetInvolvedPage() {
 
               <a
                 href="tel:07011308129"
-                className="inline-flex items-center gap-3 rounded-md border border-white/20 px-6 py-4 text-sm font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5"
+                className="inline-flex items-center gap-3 rounded-md border border-white/20 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5"
               >
                 <Phone className="h-4 w-4" />
                 07011308129
