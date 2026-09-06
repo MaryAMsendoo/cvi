@@ -13,6 +13,7 @@ export default function ImpactPage() {
         eyebrow="Impact & results"
         title="What we've delivered. What we're learning."
         description="We report what has been delivered, what has been measured, and what still needs to be learned."
+        image="/p2.jpg"
       />
 
       {/* RESULTS INTRODUCTION */}
