@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 import { FaFacebookF } from "react-icons/fa";
+import { PageHero } from "@/components/ui/PageHero";
 
 export const metadata = {
   title: "Get Involved",
@@ -46,62 +47,11 @@ export default function GetInvolvedPage() {
       {/* =========================================================
           HERO
       ========================================================= */}
-      <section className="relative overflow-hidden bg-foreground text-white">       
-
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32 lg:py-40">
-          <div className="grid gap-14 lg:grid-cols-[0.65fr_1.35fr] lg:items-end">
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="h-7 w-1.5 rounded-full bg-accent" />
-
-                <span className="text-sm font-medium text-white/60">
-                  Get involved
-                </span>
-              </div>
-
-              <div className="mt-12 max-w-sm">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-                  Partner · Contribute · Connect
-                </p>
-
-                <p className="mt-5 text-sm leading-7 text-white/55">
-                  CVI works with institutions, funders, volunteers and
-                  community partners who want to expand opportunity and
-                  strengthen inclusive participation.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <h1
-                className="max-w-5xl text-5xl leading-[0.94] tracking-[-0.035em] sm:text-6xl lg:text-8xl"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 500,
-                }}
-              >
-                Bring your
-                <br />
-                institution,
-                <br />
-                skills or ideas.
-              </h1>
-            </div>
-          </div>
-
-          <div className="mt-16 grid gap-8 border-t border-white/15 pt-6 sm:grid-cols-[1fr_auto] sm:items-end">
-            <p className="max-w-xl text-sm leading-7 text-white/50">
-              Tell us what you are exploring. We welcome thoughtful
-              conversations around partnership, volunteering, programme
-              collaboration and support.
-            </p>
-
-            <span className="text-xs font-bold uppercase tracking-[0.18em] text-white/35">
-              Makurdi · Benue State · Nigeria
-            </span>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Get involved"
+        title="Bring your institution, skills or ideas."
+        description="CVI works with institutions, funders, volunteers and community partners who want to expand opportunity and strengthen inclusive participation."
+      />
 
       {/* =========================================================
           PATHWAYS
@@ -122,7 +72,7 @@ export default function GetInvolvedPage() {
                 </span>
               </div>
 
-        
+
             </div>
 
             <div className="border-t border-border">
@@ -447,9 +397,9 @@ export default function GetInvolvedPage() {
               strokeWidth="1"
             />
 
-           
 
-            
+
+
           </svg>
         </div>
 

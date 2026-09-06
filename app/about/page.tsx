@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Check } from "lucide-react";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
+import { PageHero } from "@/components/ui/PageHero";
 
 const THEMES = [
   {
@@ -46,153 +47,90 @@ export default function Page() {
   return (
     <main>
       {/* PAGE HERO */}
-      <section className="relative overflow-hidden bg-foreground text-white">
-        <SectionBackdrop variant="d" tone="dark" />
+      <PageHero
+        eyebrow="About Citizens Voices International"
+        title="Building the capacity of citizens to shape better futures."
+        description="Citizens Voices International is a nonprofit organisation working from Makurdi, Benue State, to empower young people, strengthen inclusive governance, and develop human capital across Nigeria's Middle Belt."
+      />
 
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32 lg:py-36">
+      {/* WHO WE ARE */}
+      <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
+        {/* <SectionBackdrop variant="d" tone="light" /> */}
+
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
+          {/* IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: -24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="relative overflow-hidden rounded-[2rem]">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/p26.jpg"
+                  alt="Citizens Voices International community programme"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="absolute bottom-5 left-5 max-w-xs rounded-xl border border-white/20 bg-foreground/85 p-5 text-white backdrop-blur-md">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
+                  Our starting point
+                </p>
+
+                <p
+                  className="mt-2 text-lg leading-snug"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontWeight: 500,
+                  }}
+                >
+                  Local knowledge. Practical skills. Citizen participation.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* TEXT */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="max-w-4xl"
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6 }}
           >
             <div className="flex items-center gap-3">
               <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-white/60">
-                About Citizens Voices International
+              <span className="text-sm font-medium text-foreground/60">
+                Who we are
               </span>
             </div>
 
-            <h1
-              className="mt-6 max-w-4xl text-4xl leading-[1.05] sm:text-6xl lg:text-7xl"
+            <h2
+              className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 500,
               }}
             >
-              Building the capacity of citizens to shape better futures.
-            </h1>
+              A young organisation focused on practical change.
+            </h2>
 
-            <p className="mt-7 max-w-2xl text-base leading-7 text-white/65 sm:text-lg">
-              Citizens Voices International is a nonprofit organisation
-              working from Makurdi, Benue State, to empower young people,
-              strengthen inclusive governance, and develop human capital across
-              Nigeria&apos;s Middle Belt.
-            </p>
-          </motion.div>
+            <div className="mt-7 max-w-xl space-y-5 text-base leading-7 text-foreground/65">
+              <p>
+                CVI is a nonprofit based in Makurdi, Nigeria, helping young people
+                access skills, opportunities, and platforms to make a difference.
+              </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="mt-16 grid gap-8 border-t border-white/15 pt-6 sm:grid-cols-3"
-          >
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
-                Established
-              </p>
-              <p className="mt-2 text-sm text-white/70">Operational since 2025</p>
-            </div>
-
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
-                Location
-              </p>
-              <p className="mt-2 text-sm text-white/70">
-                Makurdi, Benue State, Nigeria
-              </p>
-            </div>
-
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">
-                Legal status
-              </p>
-              <p className="mt-2 text-sm text-white/70">
-                Incorporated Trustee · CAC IT No. 9614146
+              <p>
+                We focus on youth empowerment, inclusive governance, and human
+                capital development through practical, accountable programmes.
               </p>
             </div>
           </motion.div>
         </div>
       </section>
-
-      {/* WHO WE ARE */}
-      <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
-  {/* <SectionBackdrop variant="d" tone="light" /> */}
-
-  <div className="relative mx-auto grid max-w-7xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
-    {/* IMAGE */}
-    <motion.div
-      initial={{ opacity: 0, x: -24 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="relative overflow-hidden rounded-[2rem]">
-        <div className="relative aspect-[4/3]">
-          <Image
-            src="/p26.jpg"
-            alt="Citizens Voices International community programme"
-            fill
-            className="object-cover"
-          />
-        </div>
-
-        <div className="absolute bottom-5 left-5 max-w-xs rounded-xl border border-white/20 bg-foreground/85 p-5 text-white backdrop-blur-md">
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
-            Our starting point
-          </p>
-
-          <p
-            className="mt-2 text-lg leading-snug"
-            style={{
-              fontFamily: "var(--font-display)",
-              fontWeight: 500,
-            }}
-          >
-            Local knowledge. Practical skills. Citizen participation.
-          </p>
-        </div>
-      </div>
-    </motion.div>
-
-    {/* TEXT */}
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="flex items-center gap-3">
-        <span className="h-6 w-1.5 rounded-full bg-accent" />
-        <span className="text-sm font-medium text-foreground/60">
-          Who we are
-        </span>
-      </div>
-
-      <h2
-        className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
-        style={{
-          fontFamily: "var(--font-display)",
-          fontWeight: 500,
-        }}
-      >
-        A young organisation focused on practical change.
-      </h2>
-
-      <div className="mt-7 max-w-xl space-y-5 text-base leading-7 text-foreground/65">
-        <p>
-          CVI is a nonprofit based in Makurdi, Nigeria, helping young people
-          access skills, opportunities, and platforms to make a difference.
-        </p>
-
-        <p>
-          We focus on youth empowerment, inclusive governance, and human
-          capital development through practical, accountable programmes.
-        </p>
-      </div>
-    </motion.div>
-  </div>
-</section>
 
       {/* WHY CVI */}
       <section className="relative overflow-hidden bg-background py-24 sm:py-32">

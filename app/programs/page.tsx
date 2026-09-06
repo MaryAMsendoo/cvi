@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
 import { StackedGallery } from "@/components/ui/StackedGallery";
+import { PageHero } from "@/components/ui/PageHero";
 
 const LEARNING_AREAS = [
   {
@@ -35,51 +36,12 @@ export default function Page() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-primary-very-strong text-surface-muted">
-        <SectionBackdrop variant="i" tone="dark" />
-
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32 lg:py-36">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="max-w-4xl"
-          >
-            <div className="flex items-center gap-3">
-              <span className="h-6 w-1.5 rounded-full bg-accent" />
-              <span className="text-sm font-medium text-white/60">
-                Programmes
-              </span>
-            </div>
-
-            <h1
-              className="mt-6 max-w-4xl text-4xl leading-[1.04] sm:text-6xl lg:text-7xl"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontWeight: 500,
-              }}
-            >
-              Turning learning into practical opportunity.
-            </h1>
-
-            <p className="mt-7 max-w-2xl text-base leading-7 text-white/65 sm:text-lg">
-              CVI designs practical programmes around the skills, opportunities,
-              and civic capabilities young people need to participate and
-              thrive.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="mt-16 flex items-center gap-3 text-sm text-white/45"
-          >
-            <ArrowDown size={16} aria-hidden="true" />
-            <span>Explore our completed programme</span>
-          </motion.div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Programmes"
+        title="Turning learning into practical opportunity."
+        description="CVI designs practical programmes around the skills, opportunities, and civic capabilities young people need to participate and thrive."
+        image="/p1.jpg"
+      />
 
       {/* FEATURED PROGRAMME */}
       <section className="relative overflow-hidden bg-surface py-24 sm:py-32">
@@ -319,34 +281,34 @@ export default function Page() {
       </section>
 
       {/* MOMENTS FROM THE BOOTCAMP */}
-<section className="relative overflow-hidden bg-background py-24 sm:py-28">
-  <SectionBackdrop variant="a" tone="light" />
-  <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
-    <div className="flex items-center gap-3">
-      <span className="h-6 w-1.5 rounded-full bg-accent" />
-      <span className="text-sm font-medium text-foreground/60">Moments from the bootcamp</span>
-    </div>
-    <h2
-      className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
-      style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
-    >
-      A look inside the cohort
-    </h2>
+      <section className="relative overflow-hidden bg-background py-24 sm:py-28">
+        <SectionBackdrop variant="a" tone="light" />
+        <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
+          <div className="flex items-center gap-3">
+            <span className="h-6 w-1.5 rounded-full bg-accent" />
+            <span className="text-sm font-medium text-foreground/60">Moments from the bootcamp</span>
+          </div>
+          <h2
+            className="mt-5 max-w-xl text-3xl leading-tight text-foreground sm:text-5xl"
+            style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
+          >
+            A look inside the cohort
+          </h2>
 
-    <div className="mt-14">
-      <StackedGallery
-        images={[
-          { id: "g1", src: "/img5.png", alt: "Participants at the AI bootcamp" },
-          { id: "g2", src: "/img6.png", alt: "Group training session" },
-          { id: "g3", src: "/img8.png", alt: "Instructor leading a session" },
-          { id: "g4", src: "/img9.png", alt: "Cohort group photo" },
-          { id: "g5", src: "/img14.png", alt: "Participant at a laptop" },
-          { id: "g6", src: "/img18.png", alt: "Hands-on practical session" },
-        ]}
-      />
-    </div>
-  </div>
-</section>
+          <div className="mt-14">
+            <StackedGallery
+              images={[
+                { id: "g1", src: "/img5.png", alt: "Participants at the AI bootcamp" },
+                { id: "g2", src: "/img6.png", alt: "Group training session" },
+                { id: "g3", src: "/img8.png", alt: "Instructor leading a session" },
+                { id: "g4", src: "/img9.png", alt: "Cohort group photo" },
+                { id: "g5", src: "/img14.png", alt: "Participant at a laptop" },
+                { id: "g6", src: "/img18.png", alt: "Hands-on practical session" },
+              ]}
+            />
+          </div>
+        </div>
+      </section>
 
       {/* PARTNER / SPONSOR */}
       <section className="relative overflow-hidden bg-surface py-24 sm:py-32">

@@ -1,4 +1,5 @@
 import { PersonCard } from "@/components/person-card";
+import { PageHero } from "@/components/ui/PageHero";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
 import { people, stats } from "@/lib/content";
 
@@ -21,79 +22,12 @@ export default function TeamPage() {
   return (
     <main>
       {/* Team Hero */}
-      <section className="relative overflow-hidden bg-primary-very-strong text-white">
-        <SectionBackdrop variant="m" tone="dark" />
-
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
-          <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="h-7 w-1.5 rounded-full bg-accent" />
-
-                <span className="text-sm font-medium text-white/60">
-                  People and leadership
-                </span>
-              </div>
-
-              <div className="mt-12 max-w-sm">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-                  Governance · Delivery · Accountability
-                </p>
-
-                <p className="mt-5 text-sm leading-7 text-white/55">
-                  CVI is intentionally lean, with governance and programme
-                  delivery kept close to the people responsible for them.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <h1
-                className="max-w-5xl text-surface-muted text-5xl leading-[0.96] tracking-[-0.03em] sm:text-6xl lg:text-8xl"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 500,
-                }}
-              >
-                Small team
-                <br />
-                with a Serious
-                <br />
-                responsibility.
-              </h1>
-            </div>
-          </div>
-
-          <div className="mt-16 grid gap-7 border-t border-white/15 pt-6 sm:grid-cols-3">
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/35">
-                Trustees
-              </p>
-              <p className="mt-2 text-sm font-medium text-white">
-                {trusteeCount} registered trustees
-              </p>
-            </div>
-
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/35">
-                Staff
-              </p>
-              <p className="mt-2 text-sm font-medium text-white">
-                {staffCount} full-time staff
-              </p>
-            </div>
-
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/35">
-                Volunteers
-              </p>
-              <p className="mt-2 text-sm font-medium text-white">
-                {volunteerCount} active volunteers
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="People and leadership"
+        title="Small team. Serious responsibility."
+        description="CVI is intentionally lean, with governance and programme delivery kept close to the people responsible for them."
+        image="/img7.png"
+      />
 
       {/* Everything below remains unchanged */}
       <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">

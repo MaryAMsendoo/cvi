@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 
 import { FaFacebookF } from "react-icons/fa";
+import { PageHero } from "@/components/ui/PageHero";
 
 export const metadata = {
   title: "Contact",
@@ -20,54 +21,11 @@ export default function ContactPage() {
       {/* =========================================================
           HERO
       ========================================================= */}
-      <section className="relative overflow-hidden bg-foreground text-white">
-
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
-          <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="h-7 w-1.5 rounded-full bg-accent" />
-                <span className="text-sm font-medium text-white/60">
-                  Contact CVI
-                </span>
-              </div>
-
-              <div className="mt-12 max-w-sm">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-                  Connect · Collaborate · Engage
-                </p>
-
-                <p className="mt-5 text-sm leading-7 text-white/55">
-                  Whether you are looking to partner, support our work or learn
-                  more about CVI, we&apos;d be glad to hear from you.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <h1
-                className="max-w-5xl text-5xl leading-[0.96] tracking-[-0.03em] sm:text-6xl lg:text-8xl"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 500,
-                }}
-              >
-                Let&apos;s start
-                <br />
-                a useful
-                <br />
-                conversation.
-              </h1>
-            </div>
-          </div>
-
-          <div className="mt-16 border-t border-white/15 pt-6">
-            <p className="max-w-xl text-sm leading-7 text-white/50">
-              Citizens Voices International · Makurdi, Benue State, Nigeria
-            </p>
-          </div>
-        </div>
-      </section>
+     <PageHero
+  eyebrow="Contact CVI"
+  title="Let's start a useful conversation."
+  description="Whether you are looking to partner, support our work or learn more about CVI, we'd be glad to hear from you."
+/>
 
       {/* =========================================================
           CONTACT DETAILS

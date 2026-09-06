@@ -6,6 +6,7 @@ import {
   Landmark,
   ShieldCheck,
 } from "lucide-react";
+import { PageHero } from "@/components/ui/PageHero";
 
 export const metadata = {
   title: "Governance & Transparency",
@@ -17,67 +18,12 @@ export default function GovernancePage() {
       {/* =========================================================
           HERO
       ========================================================= */}
-      <section className="relative overflow-hidden bg-foreground text-white">
-
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-10 sm:py-32">
-          <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="h-7 w-1.5 rounded-full bg-accent" />
-                <span className="text-sm font-medium text-white/60">
-                  Governance & transparency
-                </span>
-              </div>
-
-              <div className="mt-12 max-w-sm">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
-                  Structure · Oversight · Accountability
-                </p>
-                <p className="mt-5 text-sm leading-7 text-white/55">
-                  The systems and people responsible for CVI&apos;s governance,
-                  accountability and programme integrity.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <h1
-                className="max-w-5xl text-5xl leading-[0.96] tracking-[-0.03em] sm:text-6xl lg:text-8xl"
-                style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
-              >
-                Clear structure.
-                <br />
-                Responsible
-                <br />
-                stewardship.
-              </h1>
-            </div>
-          </div>
-
-          <div className="mt-16 grid gap-7 border-t border-white/15 pt-6 sm:grid-cols-3">
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/35">
-                Legal status
-              </p>
-              <p className="mt-2 text-sm font-medium text-white">Incorporated Trustee</p>
-            </div>
-
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/35">
-                CAC registration
-              </p>
-              <p className="mt-2 text-sm font-medium text-white">IT No. 9614146</p>
-            </div>
-
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/35">
-                Registered
-              </p>
-              <p className="mt-2 text-sm font-medium text-white">8 June 2026</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Governance & transparency"
+        title="Clear structure. Responsible stewardship."
+        description="The systems and people responsible for CVI's governance, accountability and programme integrity."
+        image="/p15.jpg"
+      />
 
       {/* =========================================================
           GOVERNANCE INTRO
