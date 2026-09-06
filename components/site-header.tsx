@@ -64,10 +64,16 @@ export function SiteFooter() {
           </Link>
           <p className="mt-3 max-w-xs text-sm leading-6 text-surface-muted">Empowering citizens and young people for inclusive governance in Nigeria&apos;s Middle Belt.</p>
         </div>
-        <div><p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Explore</p><div className="mt-4 grid gap-2 text-sm text-surface-muted">{navItems.slice(0, 4).map((item) => <Link key={item.href} href={item.href} className="hover:text-white">{item.label}</Link>)}</div></div>
-        <div><p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Contact</p><p className="mt-4 text-sm leading-6 text-surface-muted">{organization.address}<br />{organization.email}</p><a href="https://www.facebook.com/100069913210617/posts/1304950281845400/?app=fbl" target="_blank" rel="noreferrer" aria-label="CVI on Facebook" title="CVI on Facebook" className="mt-5 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-surface-muted transition-colors hover:border-accent hover:bg-accent hover:text-white"><FaFacebookF size={15} aria-hidden="true" /></a></div>
+        <div>
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Explore</p>
+          <div className="mt-4 grid gap-2 text-sm text-surface-muted">{navItems.map((item) => <Link key={item.href} href={item.href} className="hover:text-white">{item.label}</Link>)}
+          </div>
+        </div>
+        <div>
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">Contact</p><p className="mt-4 text-sm leading-6 text-surface-muted">{organization.address}<br />{organization.email}</p><a href="https://www.facebook.com/100069913210617/posts/1304950281845400/?app=fbl" target="_blank" rel="noreferrer" aria-label="CVI on Facebook" title="CVI on Facebook" className="mt-5 inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-surface-muted transition-colors hover:border-accent hover:bg-accent hover:text-white"><FaFacebookF size={15} aria-hidden="true" /></a></div>
       </div>
-      <div className="border-t border-white/15 px-6 py-5 text-center text-xs text-surface-muted">Citizens Voices International · {organization.registration}</div>
+      <div className="border-t border-white/15 px-6 py-5 text-center text-xs text-surface-muted">Citizens Voices International · {organization.registration}
+      </div>
     </footer>
   );
 }

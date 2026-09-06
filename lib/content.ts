@@ -29,7 +29,7 @@ export const organization = {
   tin: "2620735177241",
   address: "No 2, Konshisha Street, High Level, Makurdi, Benue State, Nigeria",
   founded: "Operational since 2025 · Incorporated 8 June 2026",
-  email: "Email address to be confirmed",
+  email: "cvi@gmail.com",
 };
 
 export const stats = [
