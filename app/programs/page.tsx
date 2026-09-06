@@ -65,7 +65,7 @@ export default function Page() {
             >
               <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
                 <Image
-                  src="/img22.png"
+                  src="/p9.jpg"
                   alt="Digital Skills Makurdi AI Bootcamp"
                   fill
                   className="object-cover"
