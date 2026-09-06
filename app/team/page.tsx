@@ -26,7 +26,7 @@ export default function TeamPage() {
         eyebrow="People and leadership"
         title="Small team. Serious responsibility."
         description="CVI is intentionally lean, with governance and programme delivery kept close to the people responsible for them."
-        image="/img7.png"
+        image="/p28.jpg"
       />
 
       {/* Everything below remains unchanged */}

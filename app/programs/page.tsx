@@ -39,7 +39,6 @@ export default function Page() {
       <PageHero
         eyebrow="Programmes"
         title="Turning learning into practical opportunity."
-        description="CVI designs practical programmes around the skills, opportunities, and civic capabilities young people need to participate and thrive."
         image="/p1.jpg"
       />
 
@@ -103,16 +102,9 @@ export default function Page() {
               </h2>
 
               <p className="mt-6 text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
-                In June 2026, CVI delivered its first completed programme: a
-                digital skills and artificial intelligence bootcamp for young
-                people in Makurdi, Benue State.
-              </p>
-
-              <p className="mt-4 text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
-                The programme introduced participants to foundational AI
-                concepts and practical digital skills, creating an entry point
-                for young people to better understand and engage with emerging
-                technologies.
+                In June 2026, CVI delivered its first completed programme — a digital
+                skills and AI bootcamp for young people in Makurdi, Benue State,
+                introducing foundational AI concepts and practical digital skills.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -206,7 +198,7 @@ export default function Page() {
 
       {/* PROGRAMME FACTS */}
       <section className="relative overflow-hidden bg-surface-muted py-16 sm:py-20">
-        <SectionBackdrop variant="c" tone="light" />
+        <SectionBackdrop variant="g" tone="light" />
 
         <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
           <div className="flex items-center gap-3">
@@ -297,12 +289,37 @@ export default function Page() {
           <div className="mt-14">
             <StackedGallery
               images={[
-                { id: "g1", src: "/img5.png", alt: "Participants at the AI bootcamp" },
-                { id: "g2", src: "/img6.png", alt: "Group training session" },
-                { id: "g3", src: "/img8.png", alt: "Instructor leading a session" },
-                { id: "g4", src: "/img9.png", alt: "Cohort group photo" },
-                { id: "g5", src: "/img14.png", alt: "Participant at a laptop" },
-                { id: "g6", src: "/img18.png", alt: "Hands-on practical session" },
+                { id: "g1", src: "/p1.jpg", alt: "Participants at the AI bootcamp" },
+                { id: "g2", src: "/p2.jpg", alt: "Group training session" },
+                { id: "g3", src: "/p3.jpg", alt: "Instructor leading a session" },
+                { id: "g4", src: "/p4.jpg", alt: "Cohort group photo" },
+                { id: "g10", src: "/p10.jpg", alt: "Youth learning session" },
+                { id: "g5", src: "/p5.jpg", alt: "Participant at a laptop" },
+                { id: "g6", src: "/p6.jpg", alt: "Hands-on practical session" },
+                { id: "g7", src: "/p7.jpg", alt: "Bootcamp participant" },
+                { id: "g8", src: "/p8.jpg", alt: "Digital skills training session" },
+                { id: "g9", src: "/p9.jpg", alt: "Participants during the bootcamp" },
+                { id: "g11", src: "/p11.jpg", alt: "Participant working at a laptop" },
+                { id: "g12", src: "/p12.jpg", alt: "Group learning session" },
+                { id: "g13", src: "/p13.jpg", alt: "Practical training activity" },
+                { id: "g14", src: "/p14.jpg", alt: "Bootcamp cohort" },
+                { id: "g15", src: "/p15.jpg", alt: "Participants at the training" },
+                { id: "g16", src: "/p16.jpg", alt: "Digital skills workshop" },
+                { id: "g18", src: "/p18.jpg", alt: "Hands-on learning activity" },
+                { id: "g19", src: "/p19.jpg", alt: "Bootcamp participants together" },
+                { id: "g20", src: "/p20.jpg", alt: "AI learning session" },
+                { id: "g21", src: "/p21.jpg", alt: "Programme participant" },
+                { id: "g22", src: "/p22.jpg", alt: "Training programme moment" },
+                { id: "g23", src: "/p23.jpg", alt: "Learning and collaboration" },
+                { id: "g24", src: "/p24.jpg", alt: "Cohort learning moment" },
+                { id: "g25", src: "/p25.jpg", alt: "Bootcamp activity" },
+                { id: "g26", src: "/p26.jpg", alt: "Participants in the programme" },
+                { id: "g27", src: "/p27.jpg", alt: "Digital training activity" },
+                { id: "g28", src: "/p28.jpg", alt: "Participants during a session" },
+                { id: "g31", src: "/p31.jpg", alt: "Practical digital skills session" },
+                { id: "g29", src: "/p29.jpg", alt: "Cohort programme moment" },
+                { id: "g32", src: "/p32.jpg", alt: "Bootcamp group moment" },
+                { id: "g30", src: "/p30.jpg", alt: "Youth empowerment session" },
               ]}
             />
           </div>

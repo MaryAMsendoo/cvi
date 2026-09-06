@@ -157,12 +157,10 @@ export default function Page() {
 
             <div className="max-w-2xl">
               <p className="text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
-                Across Nigeria&apos;s Middle Belt, many young people face
-                overlapping barriers to skills development, economic
-                opportunity, civic participation, and meaningful networks.
-                CVI exists to help create practical pathways through those
-                barriers.
-              </p>
+  Young people across the Middle Belt face real barriers to skills,
+  opportunity, and civic participation. CVI exists to help clear a path
+  through them.
+</p>
 
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {[

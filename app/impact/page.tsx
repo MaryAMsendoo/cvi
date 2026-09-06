@@ -36,11 +36,11 @@ export default function Page() {
   return (
     <main>
       {/* HERO */}
-<PageHero
-  eyebrow="Impact & results"
-  title="What we've delivered. What we're learning."
-  description="We report what has been delivered, what has been measured, and what still needs to be learned."
-/>
+      <PageHero
+        eyebrow="Impact & results"
+        title="What we've delivered. What we're learning."
+        description="We report what has been delivered, what has been measured, and what still needs to be learned."
+      />
       {/* FEATURED PROGRAMME */}
       <section className="relative overflow-hidden bg-surface py-16 sm:py-20">
         {/* <SectionBackdrop variant="f" tone="light" /> */}
@@ -299,12 +299,12 @@ export default function Page() {
                 { id: "g2", src: "/p2.jpg", alt: "Group training session" },
                 { id: "g3", src: "/p3.jpg", alt: "Instructor leading a session" },
                 { id: "g4", src: "/p4.jpg", alt: "Cohort group photo" },
-                { id: "g10", src: "/p10.jpg", alt: "Youth learning session" },
                 { id: "g5", src: "/p5.jpg", alt: "Participant at a laptop" },
                 { id: "g6", src: "/p6.jpg", alt: "Hands-on practical session" },
                 { id: "g7", src: "/p7.jpg", alt: "Bootcamp participant" },
                 { id: "g8", src: "/p8.jpg", alt: "Digital skills training session" },
                 { id: "g9", src: "/p9.jpg", alt: "Participants during the bootcamp" },
+                { id: "g10", src: "/p10.jpg", alt: "Youth learning session" },
                 { id: "g11", src: "/p11.jpg", alt: "Participant working at a laptop" },
                 { id: "g12", src: "/p12.jpg", alt: "Group learning session" },
                 { id: "g13", src: "/p13.jpg", alt: "Practical training activity" },
@@ -334,8 +334,6 @@ export default function Page() {
 
       {/* PARTNER / SPONSOR */}
       <section className="relative overflow-hidden bg-surface py-16 sm:py-20">
-        <SectionBackdrop variant="i" tone="light" />
-
         <div className="relative mx-auto grid max-w-6xl gap-12 px-6 sm:px-10 lg:grid-cols-[1fr_0.8fr] lg:items-center">
           <div>
             <div className="flex items-center gap-3">
@@ -352,20 +350,17 @@ export default function Page() {
                 fontWeight: 500,
               }}
             >
-              Delivered with support from the Mandela Washington Fellows
-              Alumni Association of Nigeria.
+              Supported by the Mandela Washington Fellows Alumni Association of Nigeria.
             </h2>
 
-            <p className="mt-6 max-w-2xl text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
-              The Mandela Washington Fellows Alumni Association of Nigeria
-              sponsored the June 2026 Digital Skills Makurdi AI Bootcamp,
-              supporting CVI&apos;s first completed training programme.
+            <p className="mt-5 max-w-2xl text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
+              They sponsored the June 2026 Digital Skills Makurdi AI Bootcamp — CVI&apos;s
+              first completed training programme.
             </p>
 
-            <p className="mt-4 max-w-2xl text-sm leading-6 text-foreground/50">
-              CVI also has contextual institutional ties with the Federal 3MTT
-              Programme. These relationships are presented separately from
-              confirmed programme funding or sponsorship.
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-foreground/50">
+              CVI also has an institutional tie with the Federal 3MTT Programme, separate
+              from confirmed funding or sponsorship.
             </p>
           </div>
 
@@ -376,7 +371,7 @@ export default function Page() {
 
             <div className="relative mt-8 h-20 w-full">
               <Image
-                src="/mandela.jpeg"
+                src="/madela.jpg"
                 alt="Mandela Washington Fellows Alumni Association of Nigeria"
                 fill
                 className="object-contain object-left"
@@ -410,10 +405,9 @@ export default function Page() {
             </h2>
 
             <p className="mt-6 max-w-xl text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
-              CVI is continuing to develop its programme portfolio around youth
-              empowerment, inclusive governance, and human capital development.
-              Future programmes will build on what we learn from implementation
-              and from the communities we work with.
+              CVI is building its programme portfolio across youth empowerment,
+              governance, and human capital development — shaped by what we learn from
+              each community we work with.
             </p>
           </div>
 
