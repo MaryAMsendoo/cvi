@@ -338,39 +338,6 @@ export default function ContactPage() {
           CTA
       ========================================================= */}
       <section className="relative overflow-hidden bg-foreground text-white">
-        <div className="pointer-events-none absolute inset-0 opacity-[0.12]">
-          <svg
-            className="h-full w-full"
-            viewBox="0 0 800 500"
-            preserveAspectRatio="xMidYMid slice"
-            aria-hidden="true"
-          >
-            <circle
-              cx="690"
-              cy="250"
-              r="170"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <circle
-              cx="690"
-              cy="250"
-              r="120"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <circle
-              cx="690"
-              cy="250"
-              r="70"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
 
         <div className="relative mx-auto max-w-6xl px-6 py-14 sm:px-10 sm:py-16">
           <div className="max-w-3xl">
