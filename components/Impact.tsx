@@ -27,7 +27,7 @@ export default function Impact() {
   return (
     <>
       <section className="relative overflow-hidden bg-foreground px-6 py-20 sm:px-10">
-        <SectionBackdrop variant="i" tone="dark" />
+        <SectionBackdrop variant="d" tone="dark" />
         <div className="relative mx-auto max-w-4xl">
           <div className="flex items-center gap-3">
             <span className="h-6 w-1.5 rounded-full bg-accent" />

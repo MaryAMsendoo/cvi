@@ -50,9 +50,7 @@ export default function AboutPreview() {
             Citizens Voices International is a nonprofit based in Makurdi, Benue
             State, set up to address the structural barriers preventing young
             Nigerians — particularly in the Middle Belt — from accessing skills,
-            opportunities, and platforms for sustainable livelihoods. We&rsquo;re
-            governed by a lean, two-person board of trustees who remain directly
-            involved in programme delivery, not a distant oversight body.
+            opportunities, and platforms for sustainable livelihoods.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

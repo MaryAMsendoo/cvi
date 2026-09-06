@@ -96,25 +96,7 @@ export default function Hero() {
                 />
             </div>
 
-            {/* Floating pinned photos */}
-            {/* <div className="pointer-events-none absolute inset-0 hidden lg:block">
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9, rotate: -10 }}
-                    animate={{ opacity: 1, scale: 1, rotate: -6 }}
-                    transition={{ duration: 0.9, delay: 0.5, ease: "easeOut" }}
-                    className="absolute right-16 top-28 h-56 w-44 overflow-hidden rounded-sm border-4 border-surface shadow-2xl"
-                >
-                    <Image src="/img7.png" alt="" fill className="object-cover" />
-                </motion.div>
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.9, rotate: 8 }}
-                    animate={{ opacity: 1, scale: 1, rotate: 3 }}
-                    transition={{ duration: 0.9, delay: 0.65, ease: "easeOut" }}
-                    className="absolute right-40 top-72 h-44 w-56 overflow-hidden rounded-sm border-4 border-surface shadow-2xl"
-                >
-                    <Image src="/img16.png" alt="" fill className="object-cover" />
-                </motion.div>
-            </div> */}
+           
 
             {/* Content */}
             <motion.div
@@ -132,9 +114,8 @@ export default function Hero() {
                         Empowered citizens driving inclusive governance and peaceful societies.
                     </motion.h1>
                     <motion.p variants={item} className="mt-6 max-w-xl text-lg text-surface/85">
-                        CVI builds youth empowerment, inclusive governance, and human capital
-                        development in Benue State and Nigeria&rsquo;s Middle Belt.
-                    </motion.p>
+  Building youth empowerment and inclusive governance across Benue State and Nigeria&rsquo;s Middle Belt.
+</motion.p>
 
                     <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">
                         <Link

@@ -247,12 +247,6 @@ export default function GovernancePage() {
                 Transparency should reflect where an organisation actually is.
               </h2>
 
-              <p className="mt-6 text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
-                CVI was formally incorporated in June 2026 and has not yet
-                produced audited financial statements. We do not present
-                unaudited information as audited reporting.
-              </p>
-
               <div className="mt-10 grid gap-6 border-t border-white/15 pt-8 sm:grid-cols-2">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent">
@@ -304,12 +298,6 @@ export default function GovernancePage() {
                 Building the systems that support responsible growth.
               </h2>
 
-              <p className="mt-6 max-w-2xl text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
-                CVI is developing its internal governance and programme
-                systems as the organisation grows. The current priority is to
-                formalise the policies and monitoring structures required for
-                stronger programme delivery.
-              </p>
 
               <div className="mt-10 border-t border-border">
                 <div className="grid gap-5 border-b border-border py-6 sm:grid-cols-[1fr_auto]">
