@@ -24,8 +24,7 @@ export default function TeamPage() {
       {/* Team Hero */}
       <PageHero
         eyebrow="People and leadership"
-        title="Small team. Serious responsibility."
-        description="CVI is intentionally lean, with governance and programme delivery kept close to the people responsible for them."
+        title="Small team with a Serious responsibility."
         image="/p28.jpg"
       />
 

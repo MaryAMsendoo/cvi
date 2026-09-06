@@ -24,7 +24,6 @@ export default function ContactPage() {
      <PageHero
   eyebrow="Contact CVI"
   title="Let's start a useful conversation."
-  description="Whether you are looking to partner, support our work or learn more about CVI, we'd be glad to hear from you."
 />
 
       {/* =========================================================
