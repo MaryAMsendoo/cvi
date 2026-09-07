@@ -18,17 +18,13 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main className="overflow-hidden">
-      {/* =========================================================
-          HERO
-      ========================================================= */}
+          // HERO
      <PageHero
   eyebrow="Contact CVI"
   title="Let's start a useful conversation."
 />
 
-      {/* =========================================================
-          CONTACT DETAILS
-      ========================================================= */}
+          // CONTACT DETAILS
       <section className="relative bg-background">
         <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 sm:py-20">
           <div className="grid gap-14 lg:grid-cols-[0.7fr_1.3fr]">
