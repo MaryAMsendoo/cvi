@@ -9,10 +9,11 @@ import { motion, AnimatePresence, useInView, animate, type Variants } from "moti
 const CAROUSEL_IMAGES = ["/p1.jpg", "/p30.jpg", "/p8.jpg", "/p29.jpg", "/img14.png", "/p16.jpg", "/p20.jpg", "/p3.jpg", "/p4.jpg",];
 
 const STATS = [
-    { value: 57, label: "youths trained" },
+    { value: 109, label: "youths trained" },
     { value: 4, label: "full-time staff" },
     { value: 9, label: "active volunteers" },
     { value: 2, label: "programmes delivered" },
+    { value: 9000, label: "Total grant Received" },
 ];
 
 const container: Variants = {
@@ -48,7 +49,7 @@ function AnimatedStat({ value, label }: { value: number; label: string }) {
                 className="text-3xl text-surface tabular-nums"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
             >
-                {display}
+                {label === "Total grant Received" ? "$" : ""}{display.toLocaleString("en-US")}
             </div>
             <div className="mt-1 text-xs text-surface/70">{label}</div>
         </div>
@@ -96,7 +97,7 @@ export default function Hero() {
                 />
             </div>
 
-           
+
 
             {/* Content */}
             <motion.div
@@ -114,8 +115,8 @@ export default function Hero() {
                         Empowered citizens driving inclusive governance and peaceful societies.
                     </motion.h1>
                     <motion.p variants={item} className="mt-6 max-w-xl text-lg text-surface/85">
-  Building youth empowerment and inclusive governance across Benue State and Nigeria&rsquo;s Middle Belt.
-</motion.p>
+                        Building youth empowerment and inclusive governance across Benue State and Nigeria&rsquo;s Middle Belt.
+                    </motion.p>
 
                     <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">
                         <Link
@@ -139,7 +140,7 @@ export default function Hero() {
                     variants={item}
                     className="mt-16 w-full max-w-3xl rounded-lg border border-surface/15 bg-surface/10 backdrop-blur-sm"
                 >
-                    <div className="grid grid-cols-2 divide-y divide-surface/15 sm:grid-cols-4 sm:divide-y-0 sm:divide-x">
+                    <div className="grid grid-cols-2 divide-y divide-surface/1 sm:grid-cols-3 sm:divide-y-0 sm:divide-x lg:grid-cols-5">
                         {STATS.map((s) => (
                             <AnimatedStat key={s.label} value={s.value} label={s.label} />
                         ))}
