@@ -23,7 +23,7 @@ export function PageHero({
               src={image}
               alt=""
               fill
-              priority
+              preload
               className="object-cover object-center opacity-25 grayscale"
             />
           </div>

@@ -16,7 +16,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-10">
         <Link href="/" className="flex items-center gap-3" aria-label="CVI home">
-          <Image src="/logo.jpeg" alt="CVI logo" width={64} height={64} className="h-11 w-11 rounded-full object-cover ring-2 ring-accent/30" priority />
+          <Image src="/logo.jpeg" alt="CVI logo" width={64} height={64} className="h-11 w-11 rounded-full object-cover ring-2 ring-accent/30" preload />
           <span className="max-w-40 text-xs font-bold uppercase tracking-[0.14em] text-primary-strong sm:max-w-none sm:text-sm">{organization.name}</span>
         </Link>
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Main navigation">

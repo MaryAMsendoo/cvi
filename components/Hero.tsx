@@ -82,7 +82,7 @@ export default function Hero() {
                             src={CAROUSEL_IMAGES[active]}
                             alt=""
                             fill
-                            priority={active === 0}
+                            preload={active === 0}
                             className="object-cover"
                         />
                     </motion.div>

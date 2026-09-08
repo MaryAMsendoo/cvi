@@ -17,7 +17,7 @@ export function WhatsAppButton() {
         alt=""
         width={58}
         height={58}
-        className="h-12 w-12 rounded-full"
+        className="h-12 w-12 rounded-full object-cover"
       />
     </a>
   );

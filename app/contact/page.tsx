@@ -19,10 +19,10 @@ export default function ContactPage() {
   return (
     <main className="overflow-hidden">
           // HERO
-     <PageHero
-  eyebrow="Contact CVI"
-  title="Let's start a useful conversation."
-/>
+      <PageHero
+        eyebrow="Contact CVI"
+        title="Let's start a useful conversation."
+      />
 
           // CONTACT DETAILS
       <section className="relative bg-background">
