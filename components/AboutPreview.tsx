@@ -11,7 +11,7 @@ const TIMELINE = [
   {
     year: "2025",
     label: "Became operational",
-    detail: "Began programme work in Makurdi, Benue State",
+    detail: "Began program work in Akwa Ibom, Bayelsa, Cross River, Edo, Rivers, and Delta state.",
   },
   {
     year: "Jun 2026",
