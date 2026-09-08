@@ -5,9 +5,9 @@ import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
 import { StackedStoryCards } from "@/components/ui/StackedCards";
 
 const HIGHLIGHTS = [
-  { value: "57", label: "youths trained", detail: "Digital Skills Makurdi AI Bootcamp, June 2026" },
-  { value: "1", label: "cohort completed", detail: "First cohort, foundational AI skills" },
-  { value: "2026", label: "programme launched", detail: "CVI's first delivered training programme" },
+  { value: "109", label: "youths trained", detail: "Across both CVI programmes to date" },
+  { value: "2", label: "programmes delivered", detail: "Simi Olusola Youth in Politics Fellowship & Digital Skills AI Bootcamp" },
+  { value: "2024", label: "first programme launched", detail: "Simi Olusola Youth in Politics Fellowship (SOYIPF I)" },
 ];
 
 const STORY_PLACEHOLDER = {
@@ -37,12 +37,13 @@ export default function Impact() {
             className="mt-5 text-3xl leading-tight text-surface sm:text-4xl"
             style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
           >
-            What our first programme delivered
+            What our programmes have delivered
           </h2>
           <p className="mt-4 max-w-2xl text-surface/70">
-            CVI is a young organization — our results to date come from a single
-            completed programme. We&rsquo;d rather show that plainly than pad this
-            page with numbers we can&rsquo;t stand behind.
+            CVI is a young organization, our results to date come from two programmes:
+            the Simi Olusola Youth in Politics Fellowship and the Digital Skills Makurdi
+            AI Bootcamp. We&rsquo;d rather show what we&rsquo;ve actually delivered than
+            pad this page with numbers we can&rsquo;t stand behind.
           </p>
         </div>
       </section>

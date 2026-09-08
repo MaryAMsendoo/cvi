@@ -52,7 +52,7 @@ function TiltCollage() {
       >
         <Image
           src="/p10.jpg"
-          alt="Youths at the Digital Skills Makurdi AI Bootcamp"
+          alt="Fellows at the Simi Olusola Youth in Politics Fellowship bootcamp"
           fill
           className="object-cover"
         />
@@ -67,8 +67,8 @@ function TiltCollage() {
         className="absolute bottom-0 right-0 h-52 w-52 overflow-hidden rounded-[1.75rem] border-4 border-surface shadow-2xl [clip-path:polygon(0_6%,94%_0,100%_94%,6%_100%)]"
       >
         <Image
-          src="/p11.jpg"
-          alt="A participant working at a laptop"
+          src="/s4.jpeg"
+          alt="A SOYIPF I fellow during a mentorship session"
           fill
           className="object-cover"
         />
@@ -122,19 +122,18 @@ export default function ProgramSpotlight() {
             className="mt-5 text-3xl leading-tight text-foreground sm:text-4xl"
             style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
           >
-            Digital Skills Makurdi AI Bootcamp
+            Simi Olusola Youth in Politics Fellowship (SOYIPF I)
           </h2>
 
           <p className="mt-5 max-w-lg text-foreground/70">
-            Completed in June 2026, the bootcamp trained 57 Makurdi youths in AI
-            fundamentals — practical, hands-on instruction designed to open a path
-            into the digital economy.
+            CVI&rsquo;s first programme. Since 2024, SOYIPF I has trained 62
+            young Nigerians in political literacy, mentorship, and advocacy.
           </p>
 
-          {/* Sponsor credit — now a small logo-style badge instead of a dotted line */}
+          {/* Lead credit — small label + name, matching the original sponsor badge style */}
           <div className="mt-7 flex items-center gap-3 border-l-2 border-primary/40 pl-4">
             <div className="text-xs uppercase tracking-wide text-foreground/40">
-              Sponsored by
+              Led by
             </div>
 
             <div
@@ -144,7 +143,7 @@ export default function ProgramSpotlight() {
                 fontWeight: 500,
               }}
             >
-              Mandela Washington Fellows Alumni Association of Nigeria
+              Michael Benjamin, Project Director
             </div>
           </div>
 
