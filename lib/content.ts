@@ -33,10 +33,10 @@ export const organization = {
 };
 
 export const stats = [
-  { value: "57", label: "Youths trained" },
+  { value: "20", label: "Fellowship participants" },
   { value: "4", label: "Full-time staff" },
   { value: "9", label: "Active volunteers" },
-  { value: "2", label: "Programmes delivered" },
+  { value: "2", label: "Projects in portfolio" },
 ];
 
 export const people: Person[] = [

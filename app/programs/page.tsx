@@ -13,21 +13,21 @@ import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
 import { StackedGallery } from "@/components/ui/StackedGallery";
 import { PageHero } from "@/components/ui/PageHero";
 
-const LEARNING_AREAS = [
+const PROGRAMME_FOCUS = [
   {
     number: "01",
-    title: "AI fundamentals",
-    text: "Participants were introduced to core concepts behind artificial intelligence and how AI systems are used in everyday contexts.",
+    title: "Skills & Knowledge",
+    text: "Practical training in political literacy, leadership, digital skills, and AI.",
   },
   {
     number: "02",
-    title: "Practical digital skills",
-    text: "The programme focused on practical exposure rather than theory alone, helping participants build confidence with emerging digital tools.",
+    title: "Leadership & Participation",
+    text: "Building confidence to engage in governance, advocacy, and community leadership.",
   },
   {
     number: "03",
-    title: "Future opportunities",
-    text: "The bootcamp connected digital learning with the wider opportunities emerging around technology, entrepreneurship, and the changing world of work.",
+    title: "Opportunity & Impact",
+    text: "Turning new skills into community action, digital engagement, and opportunities.",
   },
 ];
 
@@ -202,71 +202,72 @@ export default function Page() {
 
       {/* WHAT THE PROGRAMME COVERED */}
       <section className="relative overflow-hidden bg-background py-16 sm:py-20">
-        <SectionBackdrop variant="h" tone="light" />
+  <SectionBackdrop variant="h" tone="light" />
 
-        <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="h-5 w-1 rounded-full bg-accent" />
-                <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
-                  Programme focus
-                </span>
-              </div>
-
-              <h2
-                className="mt-4 max-w-xl text-2xl leading-snug text-foreground sm:text-3xl"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 500,
-                }}
-              >
-                Learning that starts with what people can use.
-              </h2>
-
-              <p className="mt-6 max-w-md text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
-                The bootcamp was designed as a practical introduction to
-                artificial intelligence and digital skills for young people in
-                Makurdi.
-              </p>
-            </div>
-
-            <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
-              {LEARNING_AREAS.map((area, index) => (
-                <motion.article
-                  key={area.number}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.08,
-                  }}
-                  className="bg-surface p-6 sm:p-7"
-                >
-                  <p className="text-xs font-bold tracking-[0.18em] text-accent">
-                    {area.number}
-                  </p>
-
-                  <h3
-                    className="mt-12 text-xl text-foreground"
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontWeight: 500,
-                    }}
-                  >
-                    {area.title}
-                  </h3>
-
-                  <p className="mt-4 text-sm leading-6 text-foreground/60">
-                    {area.text}
-                  </p>
-                </motion.article>
-              ))}
-            </div>
-          </div>
+  <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+    <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+      <div>
+        <div className="flex items-center gap-3">
+          <span className="h-5 w-1 rounded-full bg-accent" />
+          <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
+            Programme focus
+          </span>
         </div>
-      </section>
+
+        <h2
+          className="mt-4 max-w-xl text-2xl leading-snug text-foreground sm:text-3xl"
+          style={{
+            fontFamily: "var(--font-display)",
+            fontWeight: 500,
+          }}
+        >
+  Building skills that create opportunity and impact.
+        </h2>
+
+        <p className="mt-6 max-w-md text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
+          Across its completed programmes, CVI combines practical learning,
+          leadership development, and community engagement to help young people
+          participate more meaningfully in governance, technology, and the
+          opportunities shaping their futures.
+        </p>
+      </div>
+
+      <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
+        {PROGRAMME_FOCUS.map((area, index) => (
+          <motion.article
+            key={area.number}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{
+              duration: 0.5,
+              delay: index * 0.08,
+            }}
+            className="bg-surface p-6 sm:p-7"
+          >
+            <p className="text-xs font-bold tracking-[0.18em] text-accent">
+              {area.number}
+            </p>
+
+            <h3
+              className="mt-12 text-xl text-foreground"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontWeight: 500,
+              }}
+            >
+              {area.title}
+            </h3>
+
+            <p className="mt-4 text-sm leading-6 text-foreground/60">
+              {area.text}
+            </p>
+          </motion.article>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* PROGRAMME FACTS */}
       <section className="relative overflow-hidden bg-surface-muted py-16 sm:py-20">
@@ -289,15 +290,15 @@ export default function Page() {
                   fontWeight: 500,
                 }}
               >
-                47
+                109
               </p>
 
               <p className="mt-4 font-bold text-foreground">
-                Young people trained
+                Young people reached
               </p>
 
               <p className="mt-2 text-sm leading-6 text-foreground/55">
-                Participants reached through the June 2026 bootcamp.
+                Participants across CVI's completed programmes.
               </p>
             </div>
 
@@ -309,15 +310,15 @@ export default function Page() {
                   fontWeight: 500,
                 }}
               >
-                01
+                02
               </p>
 
               <p className="mt-4 font-bold text-foreground">
-                Completed cohort
+                Completed Programmes
               </p>
 
               <p className="mt-2 text-sm leading-6 text-foreground/55">
-                CVI&apos;s first delivered training programme.
+                Youth-focused programmes delivered by CVI.
               </p>
             </div>
 
@@ -329,15 +330,15 @@ export default function Page() {
                   fontWeight: 500,
                 }}
               >
-                2026
+                2025 - 2026
               </p>
 
               <p className="mt-4 font-bold text-foreground">
-                First programme year
+                Programme period
               </p>
 
               <p className="mt-2 text-sm leading-6 text-foreground/55">
-                The year CVI formally launched its first completed programme.
+                CVI's completed two programmes year.
               </p>
             </div>
           </div>
@@ -361,22 +362,36 @@ export default function Page() {
           <div className="mt-14">
             <StackedGallery
               images={[
-                { id: "g1", src: "/p1.jpg", alt: "Participants at the AI bootcamp" },
                 { id: "g2", src: "/p2.jpg", alt: "Group training session" },
+                { id: "s1", src: "/s1.jpeg", alt: "SOYIPF project activity" },
                 { id: "g3", src: "/p3.jpg", alt: "Instructor leading a session" },
+                { id: "s2", src: "/s2.jpeg", alt: "SOYIPF workshop" },
                 { id: "g4", src: "/p4.jpg", alt: "Cohort group photo" },
+                { id: "s3", src: "/s3.jpeg", alt: "Fellows in discussion" },
                 { id: "g10", src: "/p10.jpg", alt: "Youth learning session" },
+                { id: "s4", src: "/s4.jpeg", alt: "Training and mentorship session" },
                 { id: "g5", src: "/p5.jpg", alt: "Participant at a laptop" },
+                { id: "s5", src: "/s5.jpeg", alt: "Youth leadership activity" },
                 { id: "g6", src: "/p6.jpg", alt: "Hands-on practical session" },
+                { id: "s6", src: "/s6.jpeg", alt: "Youth advocacy workshop" },
                 { id: "g7", src: "/p7.jpg", alt: "Bootcamp participant" },
+                { id: "s7", src: "/s7.jpeg", alt: "Youth civic participation session" },
                 { id: "g8", src: "/p8.jpg", alt: "Digital skills training session" },
+                { id: "s8", src: "/s8.jpeg", alt: "Youth politics fellowship session" },
                 { id: "g9", src: "/p9.jpg", alt: "Participants during the bootcamp" },
+                { id: "s9", src: "/s9.jpeg", alt: "Community project activity" },
                 { id: "g11", src: "/p11.jpg", alt: "Participant working at a laptop" },
+                { id: "s10", src: "/s10.jpeg", alt: "Project team and participants" },
                 { id: "g12", src: "/p12.jpg", alt: "Group learning session" },
+                { id: "s11", src: "/s11.jpeg", alt: "Fellows working together" },
                 { id: "g13", src: "/p13.jpg", alt: "Practical training activity" },
+                { id: "s12", src: "/s12.jpeg", alt: "Community engagement activity" },
                 { id: "g14", src: "/p14.jpg", alt: "Bootcamp cohort" },
+                { id: "s13", src: "/s13.jpeg", alt: "SOYIPF community engagement" },
                 { id: "g15", src: "/p15.jpg", alt: "Participants at the training" },
+                { id: "s14", src: "/s14.jpeg", alt: "Fellowship participants" },
                 { id: "g16", src: "/p16.jpg", alt: "Digital skills workshop" },
+                { id: "s15", src: "/s15.jpeg", alt: "Fellowship project moment" },
                 { id: "g18", src: "/p18.jpg", alt: "Hands-on learning activity" },
                 { id: "g19", src: "/p19.jpg", alt: "Bootcamp participants together" },
                 { id: "g20", src: "/p20.jpg", alt: "AI learning session" },
@@ -423,8 +438,9 @@ export default function Page() {
 
             <p className="mt-6 max-w-2xl text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7">
               The Mandela Washington Fellows Alumni Association of Nigeria
-              sponsored the June 2026 Digital Skills Makurdi AI Bootcamp,
-              supporting CVI&apos;s first completed training programme.
+              sponsored the 2026 Digital Skills Makurdi AI Bootcamp, one of
+              CVI&apos;s two projects alongside the Simi Olusola Youth in Politics
+              Fellowship (SOYIPF I).
             </p>
 
             <p className="mt-4 max-w-2xl text-sm leading-6 text-foreground/50">
@@ -471,7 +487,7 @@ export default function Page() {
                 fontWeight: 500,
               }}
             >
-              One completed programme is a beginning, not a finished story.
+              Two completed programmes is a beginning, not a finished story.
             </h2>
 
             <p className="mt-6 max-w-xl text-sm leading-6 text-white/60 sm:text-base sm:leading-7">
