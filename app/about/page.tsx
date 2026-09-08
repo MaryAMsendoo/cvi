@@ -34,17 +34,17 @@ const THEMES = [
 
 const TIMELINE = [
   {
-    year: "2025",
+    year: "2024",
     title: "CVI begins operations",
     text: "CVI begins its work addressing barriers to youth skills, opportunity, and participation.",
   },
   {
-    year: "June 2026",
+    year: "2026",
     title: "Official registration",
     text: "CVI is incorporated as a Trustee with the Corporate Affairs Commission.",
   },
   {
-    year: `2025 - ${yearRange}`,
+    year: `2024 - ${yearRange}`,
     title: `${programmes.length} programmes delivered`,
     text: "From political literacy to digital skills — practical training for young Nigerians.",
   },
@@ -107,7 +107,7 @@ export default function Page() {
           >
             <div className="flex items-center gap-3">
               <span className="h-5 w-1 rounded-full bg-accent" />
-              <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
+              <span className="text-xs font-medium uppercase tracking-[4px] text-foreground/55">
                 Who we are
               </span>
             </div>
@@ -146,7 +146,7 @@ export default function Page() {
             <div>
               <div className="flex items-center gap-3">
                 <span className="h-5 w-1 rounded-full bg-accent" />
-                <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
+                <span className="text-xs font-medium uppercase tracking-[4px] text-foreground/55">
                   Why CVI exists
                 </span>
               </div>
@@ -202,7 +202,7 @@ export default function Page() {
           <div className="max-w-xl">
             <div className="flex items-center gap-3">
               <span className="h-5 w-1 rounded-full bg-accent" />
-              <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
+              <span className="text-xs font-medium uppercase tracking-[4px] text-foreground/55">
                 What we focus on
               </span>
             </div>
@@ -259,7 +259,7 @@ export default function Page() {
           <div className="max-w-xl">
             <div className="flex items-center gap-3">
               <span className="h-5 w-1 rounded-full bg-accent" />
-              <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
+              <span className="text-xs font-medium uppercase tracking-[4px] text-foreground/55">
                 Our journey
               </span>
             </div>

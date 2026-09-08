@@ -34,7 +34,7 @@ export const organization = {
   registration: "CAC Incorporated Trustee No. 9614146",
   tin: "2620735177241",
   address: "No 2, Konshisha Street, High Level, Makurdi, Benue State, Nigeria",
-  founded: "Operational since 2025 · Incorporated 8 June 2026",
+  founded: "Operational since 2024 · Incorporated 8 June 2026",
   email: "cvi@gmail.com",
 };
 

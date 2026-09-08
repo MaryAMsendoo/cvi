@@ -68,7 +68,7 @@ export default function ImpactPage() {
               </p>
               <p className="mt-3 text-sm font-medium text-foreground">youths trained</p>
               <p className="mt-1.5 text-xs leading-5 text-foreground/50">
-                Participants from 2025-2026.
+                Participants from 2024-2026.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function ImpactPage() {
                 className="mt-6 text-4xl text-foreground"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
-                $5K
+                $9K
               </p>
               <p className="mt-3 text-sm font-medium text-foreground">Total funding</p>
               <p className="mt-1.5 text-xs leading-5 text-foreground/50">

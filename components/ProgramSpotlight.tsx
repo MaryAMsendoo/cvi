@@ -126,7 +126,7 @@ export default function ProgramSpotlight() {
           </h2>
 
           <p className="mt-5 max-w-lg text-foreground/70">
-            CVI&rsquo;s first programme. Since 2024, SOYIPF I has trained 62
+            CVI&rsquo;s first programme. Since 2024, SOYIPF has trained 62
             young Nigerians in political literacy, mentorship, and advocacy.
           </p>
 

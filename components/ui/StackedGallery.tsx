@@ -1,4 +1,5 @@
 // components/ui/StackedGallery.tsx
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -33,6 +34,10 @@ export function StackedGallery({
     setActive(((i % length) + length) % length);
   }
 
+  // Get the previous and next indices
+  const prevIndex = (active - 1 + length) % length;
+  const nextIndex = (active + 1) % length;
+
   return (
     <div className="relative px-8 sm:px-16">
       <div className="pointer-events-none absolute -left-1 top-4 hidden h-16 w-16 rounded-tl-3xl border-l-2 border-t-2 border-accent/50 sm:block" />
@@ -40,13 +45,23 @@ export function StackedGallery({
 
       <div className="relative flex h-[340px] items-center justify-center sm:h-[440px]">
         {images.map((img, i) => {
-          const offset = ((i - active + length) % length) as 0 | 1 | 2;
-          const styles =
-            offset === 0
-              ? { x: 0, scale: 1, opacity: 1, zIndex: 30, rotate: 0 }
-              : offset === 1
-              ? { x: 130, scale: 0.85, opacity: 0.5, zIndex: 20, rotate: 4 }
-              : { x: -130, scale: 0.85, opacity: 0.5, zIndex: 20, rotate: -4 };
+          // Determine the position of each image relative to active
+          let offset: 0 | 1 | 2 | -1 = 0;
+          let styles;
+
+          if (i === active) {
+            offset = 0;
+            styles = { x: 0, scale: 1, opacity: 1, zIndex: 30, rotate: 0 };
+          } else if (i === nextIndex) {
+            offset = 1;
+            styles = { x: 150, scale: 0.85, opacity: 0.5, zIndex: 20, rotate: 4 };
+          } else if (i === prevIndex) {
+            offset = 2;
+            styles = { x: -150, scale: 0.85, opacity: 0.5, zIndex: 20, rotate: -4 };
+          } else {
+            // Hide all other images
+            styles = { x: 0, scale: 0.7, opacity: 0, zIndex: 0, rotate: 0 };
+          }
 
           return (
             <motion.div
@@ -57,7 +72,7 @@ export function StackedGallery({
               style={{ zIndex: styles.zIndex }}
             >
               <Image src={img.src} alt={img.alt} fill className="object-cover" />
-              {img.caption && offset === 0 && (
+              {img.caption && i === active && (
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-foreground/80 to-transparent px-5 pb-4 pt-10">
                   <p className="text-sm text-surface/90">{img.caption}</p>
                 </div>

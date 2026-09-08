@@ -9,7 +9,7 @@ import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
 
 const TIMELINE = [
   {
-    year: "2025",
+    year: "2024",
     label: "Became operational",
     detail: "Began program work in Akwa Ibom, Bayelsa, Cross River, Edo, Rivers, and Delta state.",
   },

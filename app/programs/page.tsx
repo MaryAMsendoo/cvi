@@ -49,7 +49,7 @@ export default function Page() {
           <div className="flex items-center gap-3">
             <span className="h-5 w-1 rounded-full bg-accent" />
             <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
-              Completed programme · 2025
+              Completed programme · 2024
             </span>
           </div>
 
@@ -106,7 +106,7 @@ export default function Page() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground/70">
                   <CalendarDays size={15} className="text-accent" />
-                  2025
+                  2024
                 </div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground/70">
                   <MapPin size={15} className="text-accent" />
@@ -330,7 +330,7 @@ export default function Page() {
                   fontWeight: 500,
                 }}
               >
-                2025 - 2026
+                2024 - 2026
               </p>
 
               <p className="mt-4 font-bold text-foreground">

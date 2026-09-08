@@ -132,7 +132,7 @@ export default function GovernancePage() {
                 className="mt-3 text-2xl text-foreground"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
-                Operating since 2025
+                Operating since 2024
               </p>
               <p className="mt-3 text-sm leading-6 text-foreground/50">
                 CVI began its operations before its formal incorporation in
