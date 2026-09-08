@@ -11,7 +11,7 @@ export default function ImpactPage() {
       {/* HERO */}
       <PageHero
         eyebrow="Impact & results"
-        title="What we've delivered. What we're learning."
+        title="What we're delivering. What we're learning."
         description="We report what has been delivered, what has been measured, and what still needs to be learned."
         image="/p2.jpg"
       />
@@ -32,13 +32,14 @@ export default function ImpactPage() {
                 className="text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
-                Our first documented result: 57 young people trained in AI fundamentals.
+                Two projects, with different stages of impact to measure.
               </h2>
 
               <p className="mt-5 max-w-2xl text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
-                CVI is a young organisation still building its evidence base —
-                we distinguish between activities completed, results measured,
-                and outcomes that need further follow-up.
+                SOYIPF I is CVI&apos;s first project, designed to support young
+                Nigerians aged 18-40 through political literacy, mentorship,
+                digital advocacy, and community projects. The later AI Bootcamp
+                is the completed delivery currently documented.
               </p>
             </div>
           </div>
@@ -63,11 +64,11 @@ export default function ImpactPage() {
                 className="mt-6 text-4xl text-foreground"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
-                57
+                109
               </p>
               <p className="mt-3 text-sm font-medium text-foreground">youths trained</p>
               <p className="mt-1.5 text-xs leading-5 text-foreground/50">
-                Participants in the June 2026 bootcamp.
+                Participants from 2025-2026.
               </p>
             </div>
 
@@ -77,11 +78,11 @@ export default function ImpactPage() {
                 className="mt-6 text-4xl text-foreground"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
-                01
+                02
               </p>
-              <p className="mt-3 text-sm font-medium text-foreground">completed programme</p>
+              <p className="mt-3 text-sm font-medium text-foreground">Archived projects</p>
               <p className="mt-1.5 text-xs leading-5 text-foreground/50">
-                CVI&apos;s first documented programme.
+                SOYIPF and the AI Bootcamp.
               </p>
             </div>
 
@@ -91,11 +92,11 @@ export default function ImpactPage() {
                 className="mt-6 text-4xl text-foreground"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
-                2026
+                $5K
               </p>
-              <p className="mt-3 text-sm font-medium text-foreground">first delivery year</p>
+              <p className="mt-3 text-sm font-medium text-foreground">Total funding</p>
               <p className="mt-1.5 text-xs leading-5 text-foreground/50">
-                Building our monitoring foundation.
+                Covered the AI Bootcamp and fellowship activities.
               </p>
             </div>
           </div>
@@ -118,32 +119,32 @@ export default function ImpactPage() {
                 className="text-2xl leading-snug text-foreground sm:text-3xl"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
-                Better reporting as the programme portfolio grows.
+                Measuring participation, learning, and community change.
               </h2>
 
               <p className="mt-4 text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
-                We&apos;re developing a stronger monitoring and evaluation
-                approach so future programmes can be assessed beyond
-                participation numbers alone.
+                For SOYIPF I, we measured political participation, skills,
+                community projects, and engagement in governance conversations.
+                 For the AI Bootcamp, we track delivery and participant learning.
               </p>
 
               <div className="mt-8 grid gap-5 border-t border-border pt-6 sm:grid-cols-3">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-wide text-accent">Outputs</p>
                   <p className="mt-2 text-sm leading-6 text-foreground/60">
-                    What was delivered and who participated.
+                    Bootcamp participation, fellowship recruitment, and activities delivered.
                   </p>
                 </div>
                 <div>
                   <p className="text-xs font-bold uppercase tracking-wide text-accent">Learning</p>
                   <p className="mt-2 text-sm leading-6 text-foreground/60">
-                    What we learn from implementation and feedback.
+                    Changes in political knowledge, advocacy skills, and confidence.
                   </p>
                 </div>
                 <div>
                   <p className="text-xs font-bold uppercase tracking-wide text-accent">Outcomes</p>
                   <p className="mt-2 text-sm leading-6 text-foreground/60">
-                    Reported once sufficiently measured.
+                    Community project results and sustained civic participation.
                   </p>
                 </div>
               </div>
