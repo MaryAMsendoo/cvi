@@ -6,6 +6,13 @@ import { motion } from "motion/react";
 import { ArrowUpRight, Check } from "lucide-react";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
 import { PageHero } from "@/components/ui/PageHero";
+import { programmes } from "@/lib/content";
+
+
+const programmeYears = programmes.map((p) => parseInt(p.date.match(/\d{4}/)?.[0] ?? "0", 10));
+const startYear = Math.min(...programmeYears);
+const endYear = Math.max(...programmeYears);
+const yearRange = startYear === endYear ? `${startYear}` : `${startYear} - ${endYear}`;
 
 const THEMES = [
   {
@@ -29,17 +36,17 @@ const TIMELINE = [
   {
     year: "2025",
     title: "CVI begins operations",
-    text: "Citizens Voices International begins its work in response to barriers limiting young people's access to skills, opportunities, and platforms for participation.",
+    text: "CVI begins its work addressing barriers to youth skills, opportunity, and participation.",
   },
   {
     year: "June 2026",
     title: "Official registration",
-    text: "CVI is incorporated as a Trustee with the Corporate Affairs Commission, formalising the organisation's governance structure.",
+    text: "CVI is incorporated as a Trustee with the Corporate Affairs Commission.",
   },
   {
-    year: "June 2026",
-    title: "First programme delivered",
-    text: "The Digital Skills Makurdi AI Bootcamp trains 57 young people on foundational artificial intelligence skills.",
+    year: `2025 - ${yearRange}`,
+    title: `${programmes.length} programmes delivered`,
+    text: "From political literacy to digital skills — practical training for young Nigerians.",
   },
 ];
 
@@ -157,10 +164,10 @@ export default function Page() {
 
             <div className="max-w-2xl">
               <p className="text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
-  Young people across the Middle Belt face real barriers to skills,
-  opportunity, and civic participation. CVI exists to help clear a path
-  through them.
-</p>
+                Young people across the Middle Belt face real barriers to skills,
+                opportunity, and civic participation. CVI exists to help clear a path
+                through them.
+              </p>
 
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {[
@@ -282,7 +289,7 @@ export default function Page() {
                   className="relative grid gap-3 sm:grid-cols-[120px_1fr] sm:gap-6"
                 >
                   <div className="relative flex items-start gap-3">
-                    <span className="mt-1 hidden h-2 w-2 shrink-0 rounded-full bg-accent ring-4 ring-surface sm:block" />
+                    <span className="mt-1 hidden h-2 ml-1 w-2 shrink-0 rounded-full bg-accent ring-4 ring-surface sm:block" />
                     <p
                       className="text-lg text-foreground"
                       style={{

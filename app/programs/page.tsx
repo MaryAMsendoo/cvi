@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import {
-  ArrowDown,
   ArrowUpRight,
   CalendarDays,
   MapPin,
@@ -44,13 +43,13 @@ export default function Page() {
 
       {/* FEATURED PROGRAMME */}
       <section className="relative overflow-hidden bg-surface py-16 sm:py-20">
-        {/* <SectionBackdrop variant="f" tone="light" /> */}
-
         <div className="relative mx-auto max-w-6xl px-6 sm:px-10">
+
+          {/* SOYIPF I */}
           <div className="flex items-center gap-3">
             <span className="h-5 w-1 rounded-full bg-accent" />
             <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
-              Completed programme · June 2026
+              Completed programme · 2025
             </span>
           </div>
 
@@ -65,17 +64,17 @@ export default function Page() {
             >
               <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
                 <Image
-                  src="/p9.jpg"
-                  alt="Digital Skills Makurdi AI Bootcamp"
+                  src="/s4.jpeg"
+                  alt="Simi Olusola Youth in Politics Fellowship"
                   fill
                   className="object-cover"
                 />
               </div>
 
               <div className="absolute -bottom-5 right-5 rounded-xl border border-border bg-background px-5 py-4 shadow-xl sm:right-8">
-                <p className="text-3xl text-accent">57</p>
+                <p className="text-3xl text-accent">62</p>
                 <p className="mt-1 text-xs font-bold uppercase tracking-[0.12em] text-foreground/50">
-                  youths trained
+                  youth fellows trained
                 </p>
               </div>
             </motion.div>
@@ -88,43 +87,116 @@ export default function Page() {
               transition={{ duration: 0.65 }}
             >
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">
-                Digital skills · AI · Youth
+                Political literacy · Leadership · Youth
               </p>
 
               <h2
                 className="mt-4 text-2xl leading-snug text-foreground sm:text-3xl"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 500,
-                }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
               >
-                Digital Skills Makurdi AI Bootcamp
+                Simi Olusola Youth in Politics Fellowship (SOYIPF I)
               </h2>
 
               <p className="mt-6 text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
-                In June 2026, CVI delivered its first completed programme — a digital
-                skills and AI bootcamp for young people in Makurdi, Benue State,
-                introducing foundational AI concepts and practical digital skills.
+                CVI's first completed programme — a residential fellowship equipping
+                young Nigerians aged 18–40 with political literacy, leadership, and
+                advocacy skills to engage meaningfully in governance.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground/70">
                   <CalendarDays size={15} className="text-accent" />
-                  June 2026
+                  2025
                 </div>
-
                 <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground/70">
                   <MapPin size={15} className="text-accent" />
-                  Makurdi, Benue
+                  Akwa Ibom State
                 </div>
-
                 <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground/70">
                   <Users size={15} className="text-accent" />
-                  57 youths
+                  62 fellows
                 </div>
               </div>
             </motion.div>
           </div>
+
+          {/* AI BOOTCAMP */}
+          <div className="mt-24 flex items-center gap-3">
+            <span className="h-5 w-1 rounded-full bg-accent" />
+            <span className="text-xs font-medium uppercase tracking-wide text-foreground/55">
+              Completed programme · 2026
+            </span>
+          </div>
+
+          <div className="mt-10 grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+            {/* CONTENT (left this time, for rhythm) */}
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.65 }}
+              className="lg:order-1"
+            >
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">
+                Digital skills · AI · Youth
+              </p>
+
+              <h2
+                className="mt-4 text-2xl leading-snug text-foreground sm:text-3xl"
+                style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
+              >
+                Digital Skills Makurdi AI Bootcamp
+              </h2>
+
+              <p className="mt-6 text-sm leading-6 text-foreground/65 sm:text-base sm:leading-7">
+                In 2026, CVI delivered its second completed programme — a
+                digital skills and AI bootcamp for young people in Makurdi, Benue
+                State, introducing foundational AI concepts and practical digital
+                skills.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground/70">
+                  <CalendarDays size={15} className="text-accent" />
+                  2026
+                </div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground/70">
+                  <MapPin size={15} className="text-accent" />
+                  Makurdi, Benue State
+                </div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground/70">
+                  <Users size={15} className="text-accent" />
+                  47 youths
+                </div>
+              </div>
+            </motion.div>
+
+            {/* IMAGE */}
+            <motion.div
+              initial={{ opacity: 0, x: 25 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.65 }}
+              className="relative lg:order-2"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
+                <Image
+                  src="/p9.jpg"
+                  alt="Digital Skills Makurdi AI Bootcamp"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="absolute -bottom-5 left-5 rounded-xl border border-border bg-background px-5 py-4 shadow-xl sm:left-8">
+                <p className="text-3xl text-accent">47</p>
+                <p className="mt-1 text-xs font-bold uppercase tracking-[0.12em] text-foreground/50">
+                  youths trained
+                </p>
+              </div>
+            </motion.div>
+          </div>
+
         </div>
       </section>
 
@@ -217,7 +289,7 @@ export default function Page() {
                   fontWeight: 500,
                 }}
               >
-                57
+                47
               </p>
 
               <p className="mt-4 font-bold text-foreground">
