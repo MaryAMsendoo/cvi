@@ -6,7 +6,7 @@ export default function Loading() {
           <div className="absolute inset-[-4px] animate-spin rounded-full border-4 border-transparent border-t-accent" />
           <span className="text-sm font-bold text-primary-strong">CVI</span>
         </div>
-        <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-strong">Loading</p>
+        <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary-strong">Loading...</p>
       </div>
     </main>
   );

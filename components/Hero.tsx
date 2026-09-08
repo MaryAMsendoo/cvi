@@ -7,9 +7,9 @@ import { motion, AnimatePresence, useInView, animate, type Variants } from "moti
 
 
 const CAROUSEL_IMAGES = [
-  "/p1.jpg", "/p30.jpg", "/p8.jpg", "/p29.jpg", "/img14.png",
+  "/p1.jpg", "/s2.jpeg", "/p30.jpg", "/s12.jpeg", "/p8.jpg", "/p29.jpg", "/img14.png",
+    "/s1.jpeg", "/s2.jpeg", "/s3.jpeg", "/s4.jpeg", "/s5.jpeg",
   "/p16.jpg", "/p20.jpg", "/p3.jpg", "/p4.jpg",
-  "/s1.jpeg", "/s2.jpeg", "/s3.jpeg", "/s4.jpeg", "/s5.jpeg",
   "/s6.jpeg", "/s7.jpeg", "/s8.jpeg", "/s9.jpeg", "/s10.jpeg",
   "/s11.jpeg", "/s12.jpeg", "/s13.jpeg", "/s14.jpeg", "/s15.jpeg",
 ];
@@ -19,7 +19,7 @@ const STATS = [
     { value: 4, label: "full-time staff" },
     { value: 9, label: "active volunteers" },
     { value: 2, label: "programmes delivered" },
-    { value: 9000, label: "Total grant Received" },
+    { value: 9, label: "Total grant Received" },
 ];
 
 const container: Variants = {
@@ -55,7 +55,7 @@ function AnimatedStat({ value, label }: { value: number; label: string }) {
                 className="text-3xl text-surface tabular-nums"
                 style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
             >
-                {label === "Total grant Received" ? "$" : ""}{display.toLocaleString("en-US")}
+                {label === "Total grant Received" ? "$" : ""}{display.toLocaleString("en-US")}{label === "Total grant Received" ? "K" : ""}
             </div>
             <div className="mt-1 text-xs text-surface/70">{label}</div>
         </div>

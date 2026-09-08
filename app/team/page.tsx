@@ -1,7 +1,7 @@
 import { PersonCard } from "@/components/person-card";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionBackdrop } from "@/components/ui/SectionBackdrop";
-import { people, stats } from "@/lib/content";
+import { people, soyipfTeam, stats } from "@/lib/content";
 
 export const metadata = { title: "Our Team" };
 
@@ -65,6 +65,51 @@ export default function TeamPage() {
             </div>
           </section>
         ))}
+
+        <section className="relative overflow-hidden border-t border-border pt-14 sm:pt-16">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.25em] text-accent">
+                SOYIPF I project team
+              </p>
+              <h2
+                className="mt-3 max-w-2xl text-2xl leading-snug text-foreground sm:text-3xl"
+                style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
+              >
+                The people moving the fellowship from idea to impact.
+              </h2>
+            </div>
+            <p className="max-w-sm text-sm leading-6 text-foreground/60">
+              A dedicated team spanning leadership, partnerships, advocacy,
+              training, research, finance, communications, and participant care.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-2">
+            {soyipfTeam.map((member, index) => (
+              <article
+                key={`${member.name}-${member.role}`}
+                className="group bg-surface p-6 transition-colors duration-300 hover:bg-background sm:p-7"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <span className="text-xs font-bold tracking-[0.18em] text-accent">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <h3
+                  className="mt-8 text-xl text-foreground"
+                  style={{ fontFamily: "var(--font-display)", fontWeight: 500 }}
+                >
+                  {member.name}
+                </h3>
+                <p className="mt-1 text-sm font-bold text-accent">{member.role}</p>
+                <p className="mt-4 text-sm leading-6 text-foreground/60">
+                  {member.responsibility}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
       </div>
     </main>
   );

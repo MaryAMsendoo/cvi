@@ -17,6 +17,12 @@ export type Programme = {
   metric: string;
 };
 
+export type ProjectTeamMember = {
+  name: string;
+  role: string;
+  responsibility: string;
+};
+
 export const organization = {
   name: "Citizens Voices International",
   shortName: "CVI",
@@ -107,4 +113,57 @@ export const navItems = [
   { label: "Impact", href: "/impact" },
   { label: "Governance", href: "/governance" },
   { label: "Contact", href: "/contact" },
+];
+
+export const soyipfTeam: ProjectTeamMember[] = [
+  {
+    name: "Michael Benjamin",
+    role: "Project Director",
+    responsibility: "Overall project leadership, strategic planning, stakeholder management, and delivery oversight.",
+  },
+  {
+    name: "James Akan",
+    role: "Program and Partnership Manager",
+    responsibility: "Day-to-day operations, implementation coordination, and strategic partner development.",
+  },
+  {
+    name: "Serena Francis",
+    role: "Monitoring and Evaluation Specialist",
+    responsibility: "Developing the monitoring and evaluation framework to track progress and project impact.",
+  },
+  {
+    name: "Aisha Rilwanu",
+    role: "Policy Advocacy and Empowerment Manager",
+    responsibility: "Engaging policymakers and advocating for policies that support young people's political participation.",
+  },
+  {
+    name: "Ibrahim Adewale Oladipo",
+    role: "Community Engagement and Mobilisation Officer",
+    responsibility: "Building relationships with communities, organisations, and local stakeholders.",
+  },
+  {
+    name: "Chibuike Egbujiem",
+    role: "Curriculum Development, Training and Capacity Building Specialist",
+    responsibility: "Designing and delivering training that strengthens fellows' skills and capacity.",
+  },
+  {
+    name: "Oluwutomisi Adeyefa",
+    role: "Strategic Communications and Media Officer",
+    responsibility: "Developing communications, managing media relations, and promoting the fellowship.",
+  },
+  {
+    name: "Festus Moses",
+    role: "Finance, Administration and Grant Mobilization Manager",
+    responsibility: "Overseeing budgeting, financial management, administration, and resource allocation.",
+  },
+  {
+    name: "Ridwanullahi Amoo Olasunkanmi",
+    role: "Research, Technical and Innovative Manager",
+    responsibility: "Researching youth political participation and providing data-driven insights for project strategy.",
+  },
+  {
+    name: "Hafiz Mukhtar",
+    role: "Volunteer, Intern and Psychosocial Support Coordinator",
+    responsibility: "Managing volunteers and interns while providing psychosocial support and motivation.",
+  },
 ];
