@@ -66,7 +66,7 @@ export default function TeamPage() {
           </section>
         ))}
 
-        <section className="relative overflow-hidden border-t border-border pt-14 sm:pt-16">
+        {/* <section className="relative overflow-hidden border-t border-border pt-14 sm:pt-16">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.25em] text-accent">
@@ -109,7 +109,7 @@ export default function TeamPage() {
               </article>
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );
