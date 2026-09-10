@@ -18,7 +18,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main className="overflow-hidden">
-          // HERO
+          {/* HERO */}
       <PageHero
         eyebrow="Contact CVI"
         title="Let's start a useful conversation."
